@@ -1,0 +1,454 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Software}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{bigPint: A Bioconductor package that makes big data pint-sized}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+corref={aff1},                       % id of corresponding address, if any
+email={lindsayannerutter@gmail.com}   % email address
+]{\inits{LR}\fnm{Lindsay} \snm{Rutter}}
+\author[
+addressref={aff2},
+email={dicook@monash.edu}
+]{\inits{DC}\fnm{Dianne} \snm{Cook}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{
+\orgname{Bioinformatics and Computational Biology Program, Iowa State University},
+\city{Ames},
+\cny{USA}
+}
+\address[id=aff2]{
+\orgname{Econometrics and Business Statistics, Monash University},
+\city{Clayton VIC},
+\cny{Australia}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+%\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} % abstract
+
+
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{sample}
+\kwd{article}
+\kwd{author}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+
+%\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
+
+% aims, summary of literature, why study important
+\section*{Background}
+
+Interactive data visualization is increasingly imperative in the biological sciences \cite{o2010visualizing}. When performing RNA-seq studies, researchers wish to determine which genes are differentially expressed between treatment groups. Interactive visualization can help them assess differentially expressed gene (DEG) calls before performing any subsequent functional enrichment analyses. New visualization tools for genomic data have incorporated interactive capabilities, and some believe this trend could enhance the exploration of genomic data in the future \cite{pavlopoulos2015visualizing}. Despite the growing appreciation of the inherent value of interactive graphics, the availability of effective and easy-to-use interactive visualization tools for RNA-seq data remains limited.
+
+Some interactive visualization tools for genomic data have limited usability because they are only available on certain operating systems and/or require payment \cite{seo2002interactively, ahlberg1996spotfire, chu2001genespringtm}. These limitations can be removed when tools are published on open-source repositories. Indeed, the Bioconductor project aims to foster interdisciplinary scientific research by promoting transparency and reproducibility while allowing software content to be used on Windows, MacOS, and Linux \cite{gentleman2004bioconductor}. Bioconductor software is written in the R programming language, which also provides statistical and visualization methods that can facilitate the development of robust graphical tools in computational biology. Several interactive visualization methods for genomic data have been developed using Shiny, which is also based on R programming language \cite{rue2018isee, schultheis2018wilson, hughes2017expressiondb}. 
+
+We recently developed bigPint, an interactive data visualization software package available on Bioconductor. The bigPint package allows users to visually explore many types of large multivariate datasets, even though it was more specifically developed for RNA-seq data. In a recent methods paper, we used public RNA-seq datasets to demonstrate how bigPint graphics can help biologists detect crucial issues with normalization methods and DEG designation in ways not possible with numerical models \cite{rutter1}. We also applied bigPint visualization tools in a recent research paper that sought to elicit how nutrition and viral infection affect the honey bee transcriptome \cite{rutter2}. In the current paper, we explain the technical innovations and merits of the bigPint package, including new interactive visualization techniques that we believe can be helpful in the development and usage of future biological visualization software. The bigPint website is located at https://bioconductor.org/packages/devel/bioc/html/bigPint.html and contains short vignette articles that introduce new users and provide suggested analysis pipelines, all written in reproducible code.
+
+\section*{Results}
+
+%%%%%%%%%%%%% Basic usage %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Basic input}
+
+Each method in bigPint requires an input parameter data object. If a researcher is using the package to visualize RNA-seq data, then this data object should be a count table that contains the read counts for all genes of interest. The value in row \textit{i} and column \textit{j} should indicate how many reads have been assigned to gene \textit{i} in sample \textit{j}. This is the same input format required in popular RNA-seq count-based statistical methods, such as DESeq2, edgeR, limma, DSS, EBSeq, and BaySeq \cite{??????}. 
+
+Several methods in bigPint also require an input parameter dataMetrics object. If a researcher is using the package to visualize RNA-seq data, then this dataMetrics object should be subset of the data (usually DEGs) where each case includes quantitative values of interest (such as fold change and FDR). This information can be easily derived from popular RNA-seq numerical analysis packages. Again, this conveniently allows users to work smoothly between visualizations in the bigPint package and models in other Bioconductor packages, abiding to the notion that the most efficient way to analyze large datasets is to iterate between models and visualizations. 
+
+%%%%%%%%%% Original features %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Original features}
+
+\subsubsection*{Separate layers of dynamics and interactivity}
+
+The Bioconductor community advanced the boundaries of biological visualization in the past and believes that interactive technology must be incorporated to continue these advancements in the future \cite{gentleman2004bioconductor}. We developed what we believe is a fairly new interactive visualization technology that could be useful in the exploration of many types of large biological datasets. Our technique allows for two separate layers of interactive and dynamic capabilities, one for the foreground of the plot and one for the background of the plot. With interaction, users can interact with displayed data. This could mean hovering over a graphical representation of the data (such as a hexagon) to obtain metadata about the elements within that graphical representation (such as the names of its contained genes). 
+
+
+This is especially true with large RNA-seq datasets, where the background can contain the entire dataset and the foreground can contain only a subset of the dataset (such as one or more DEGs). A user may wish to overlay one DEG in the foreground across the entire dataset in the background
+
+\subsubsection*{1. Scatterplot matrices}
+
+Scatterplot matrices have appeared in statistical graphics literature for almost four decades and used across various fields of research \cite{becker1984brushing, carr1984graphical, tufte2001visual, tukey1981graphical}. Previous user studies have shown that participants performed better when using animated rather than static versions of scatterplot matrices. Users also preferred animated scatterplot matrices and found them easier to understand as they can alleviate overplotting issues \cite{chen2018using}. Interaction has been shown to extend the scatterplot matrix into an effective tool when representing large datasets \cite{carr1987scatterplot}. We believe our new interactive visualization technology may further improve upon this long-standing plotting technique known for its effectiveness in exploratory multivariate data analysis .
+
+\subsubsection*{2. Litre plots}
+
+Problems still remain when scatterplot matrices are applied to large datasets. Physical space requirements grow exponentially by dimension size: for $n$-dimensional data, $n^2$ scatterplots are typically drawn. Hence, when extended to large dimensions, it becomes difficult to mentally link many small plots within the matrix \cite{kerren2007human}. Several techniques have been proposed to ameloriate this problem. Three dimensional scatterplots are useful but can cause occlusion and depth perception issues \cite{kerren2007human}. Other techniques like grand tours \cite{asimov1985grand}, projection pursuits \cite{friedman1974projection, cook1995grand}, and scagnostics \cite{wilkinson2005graph} have been proposed.
+
+Even though these alternative techniques are useful, they do not draw distributions across all cases (genes) and variables (samples). When analyzing RNA-seq data, we mainly want to compare replicate and treatment variability, which can be visually accomplished by plotting all genes and samples. It is useful to then superimpose DEGs to determine how they compare to the dataset as a whole. In light of this, we developed a plot that collapses the scatterplot matrix into one Cartesian coordinate system, allowing users to visualize the samples of one DEG of interest onto the samples of all genes in the dataset. We call this new plot a repLIcate TREatment (``litre'') plot. An in depth explanation about the litre plot can be found in our previous methods paper \cite{rutter1}.
+
+We believe our interactive visualization technology is necessary for the litre plot. Drawing the background (all genes in the dataset) is the limiting step for time and computation. Drawing the foreground (one DEG of interest) is immediate. Most users would like to quickly superimpose DEGs from a list one by one onto the background. This would be unnecessarily time-prohibiting if the background were redrawn as the user flipped through the DEG list. Fortunately, our technology allows the background to remain unchanged while preserving its interactive capabilities (hovering, zooming, panning) as the user continuously updates the foreground with superimposed DEGs.
+
+\subsubsection*{3. Volcano plots}
+
+
+
+%%%%%%%%%%% Useful features %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Useful features}
+
+\subsubsection*{Tailoring and saving static plots}
+
+Static plots can be saved as list objects in the R workspace and/or as JPG files to a directory chosen by the user. Saving plots into the R workspace allows users to integrate them into analysis workflows. It also allows them to tailor the plots (such as adding titles and changing label sizes) using the grammar of graphics via the conventional + syntax. Saving plots to a directory allows users to keep professional-looking files that can be inserted into proposals and talks. By default, the bigPint package saves static plots both in the R workspace and a directory (the default location is tempdir()).
+
+\subsubsection*{Second feature layer}
+
+All plots, but static and interactive, allow for a selection of data to be plotted in a different way than the rest of the data. When analyzing RNA-seq data, this second feature layer could represent DEGs. There are three options for superimposing data subsets. First, users can declare data subsets using the previously-mentioned dataMetrics object by thresholding one of its quantitative variables. Second, users can simply declare a list of IDs to be overlaid using an object called geneList. This allows for more flexiblility than the first option. Third, the user can simply not overlay data subsets by leaving the dataMetrics and geneList objects with a value of NULL.
+
+\subsubsection*{Group comparison filters}
+
+When users create static plots, the package automatically creates a separate plot for each pairwise combination of treatment groups from the inputted data. When users explore interactive plots, fields are dynamically generated from the inputted data so that any pairwise combination of treatment groups can be selected. Users can then quickly flip between different contrasts in their data. The package comes with an example dataset of soybean cotyledon data that has three treatment groups and examples of these contrast functionalities are shown on this data throughout the easy-to-follow articles on the package website. 
+
+\subsubsection*{Hexagonal binning}
+
+Users can create scatterplot matrices and litre plots using points (where each point represents one gene) or hexagonal binnings (where each hexagon color represents the number of genes in that area). Plotting each gene as a point allows for ideal levels of detail until overplotting occurs, which makes it difficult to determine how many genes are in given areas. In large datasets, this problem often persists even with techniques like alpha blending. Hexagonal binning has been used in prior software to successfully manage overplotting issues \cite{carr1987scatterplot, harshbarger2017deiva} and has shown superior time performance because less geometic objects need to be plotted. The bigPint package allows users to plot using either raw points or hexagonal binning, either of which can be useful depending on the dataset.
+
+\subsubsection*{Hierarchical clustering}
+
+Users can conduct hierarchical clustering analyses on their data using the function plotClusters(). By default, the resulting clusters will be plotted as parallel coordinate lines superimposed onto side-by-side boxplots that represent the distribution of the full dataset. There are three main approaches in the plotClusters() function:
+
+\begin{itemize}  
+\item Approach 1: The clusters are formed by clustering only on a user-defined subset of data (such as significant genes). Only these user-defined genes are overlaid as parallel coordinate lines. 
+\item Approach 2: The clusters are formed by clustering the full dataset. Then, only a user-defined subset of data (such as significant genes) are overlaid as parallel coordinate lines.
+\item Approach 3: The clusters are formed by clustering the full dataset. All genes are overlaid as parallel coordinate lines.
+\end{itemize}
+
+The clustering algorithm is based on the hclust() and cutree() functions in the R stats package. It offers the same set of agglomeration methods (``ward.D'', ``ward.D2'', ``single'', ``complete'', ``average'', ``mcquitty'', ``median'', and ``centroid'') with ``ward.D'' as the default. In many cases, users may want to save clusters derived from the plotClusters() function for later use, such as to overlay them onto scatterplot matrices, litre plots, and volcano plots. The gene IDs of each cluster can be saved as .RDS files for this purpose by setting the verbose option of the plotClusters() function to a value of TRUE.
+
+\subsubsection*{Various plot aesthetics}
+
+Users can modify various aesthetics for both static and interactive plots, including hexagon size and point size. Some plots also allow for alpha blending, which has proven beneficial when plotting certain large datasets into parallel coordinate lines \cite{unwin2007computational}. Statistical coloring is inconsistent in many numerous packages even though it can greatly enhance biological data visualization \cite{yin2012ggbio}. The bigPint package allows users to easily maintain consistent coloring across hierarchical clusters and when working between various plots.
+
+\subsubsection*{Selection and aggregation}
+
+Some techniques that are effective in data exploration may lose their efficiency and eventually fail as data items increase in size. Two main approaches to solving these problems include data selection and data aggregation \cite{andrienko2005blending}. Data selection means that only a subset of the full dataset is displayed at a given time. The data subset can be selected through queries where data items are only displayed if they meet certain requirements \cite{andrienko2005blending}. The data subset can also be selected through interactive controls which allow the user to quickly examine between various subsets of the data \cite{andrienko2005blending}. Data aggregation means that the full dataset is divided into data subsets (called aggregates) that reduce the amount of data being visualized at once. When working with large datasets, an appropriate compromise is for users to be able to perform both data selection and data aggregation \cite{andrienko2005blending}. The bigPint package allows users to easily perform data selection using queries and interactive controls (such as zooming, box and lasso selection, and panning) and to perform data aggregation using hierarchical clustering. 
+
+\subsubsection*{Shiny interactivity}
+
+Interactive plots in the bigPint package open as Shiny applications that consist of simple dashboards with ``About'' tabs that explain how to use the applications. They also include ``Application'' tabs that provide several input fields for the user to tailor their plots. Some of these input fields are generated dynamically from the inputted dataset so users have more flexibility in how they select any data subsets they wish to superimpose. In these applications, users can also download lists of selected genes and static images of interactive graphics to their local computers. 
+
+Shiny allows for linking between plots. Linking functionality between these plots plays a crucial role in rendering them suitable for large datasets \cite{nguyen2016deep, albuquerque2009quality, heinrich2012parallel}. By combining Shiny with Plotly and htmlwidgets functions, the bigPint package offers novel ways of dynamically and interactively working within and between plots.
+
+Shiny applications can be launched on a local personal computer, hosted on a local or cloud-based server, or hosted for free on the shinyapps.io website. As such, interactive bigPint packages can be deployed on a personal computer using only a local file containing the data, the bigPint package and its dependencies, R / RStudio, and a browser recommended by Shiny (Google Chrome or Mozilla Firefox). This method does not require internet connectivity, which can be useful for users who are protecting sensitive data, analyzing or presenting data in contexts without reliable connectivity, or testing and developing applications.
+
+% implications of the findings, limitations, practical/operational issues
+\section*{Discussion}
+
+Researchers benefit when they are able to view multiple perspective of their data, especially when working with large datasets \cite{swayne2003ggobi, cook2007interactive}. The ability to select and aggregate data, threshold data to create subsets, link between multiple plots, interact with plots, and tailor various aesthetics in intelligent ways are all useful features of the bigPint package \cite{o2010visualizing, pavlopoulos2015visualizing, kerren2007human}. We expect that bigPint will enable researchers to generate and interact with intuitive, high quality, and reproducible plots from increasingly large datasets, including RNA-seq datasets. 
+
+% main conclusions, importance and relevance of study to field 
+\section*{Conclusion}
+
+Despite the growing appreciation of the inherent value in interactive graphics, the availability of easy-to-use and effective interactive exploratory visualization tools for RNA-seq data remains limited. In this paper, we introduced new visualization techniques with dynamic and interactive capabilities that are separately layered in the foreground and background of plots. We believe this methodology represents a fairly novel contribution to the field of interactive data visualization. Advocating state-of-the-art visualization tools is crucial for biology researchers to analyze and present their data and for visualization researchers to develop novel methods. Lessons learned from our open-source work may encourage the development of additional interactive visualization tools for various computational tasks.
+
+% software tool requirements
+\section*{Methods}
+
+bigPint was released under the GPL-3 license. Most bigPint visualization methods were constructed using htmlwidgets \cite{htmlwidgets}, ggplot2 \cite{ggplot2}, shiny \cite{shiny}, shinyapps.io \cite{rstudio}, and plotly \cite{plotly}. bigPint methods were tested on numerous RNA-seq datasets \cite{rutter1, rutter2}. The package website was constructed using the pkgdown software \cite{pkgdown}. bigPint can be downloaded from the Bioconductor website \cite{gentleman2004bioconductor}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+\section*{Competing interests}
+  The authors declare that they have no competing interests.
+
+\section*{Author's contributions}
+    Text for this section \ldots
+
+\section*{Acknowledgements}
+  Text for this section \ldots
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+\section*{Figures}
+  \begin{figure}[h!]
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content
+      should go here.}
+      \end{figure}
+
+\begin{figure}[h!]
+  \caption{\csentence{Sample figure title.}
+      Figure legend text.}
+      \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+% \section*{Tables}
+% \begin{table}[h!]
+% \caption{Sample table title. This is where the description of the table should go.}
+%       \begin{tabular}{cccc}
+%         \hline
+%            & B1  &B2   & B3\\ \hline
+%         A1 & 0.1 & 0.2 & 0.3\\
+%         A2 & ... & ..  & .\\
+%         A3 & ..  & .   & .\\ \hline
+%       \end{tabular}
+% \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Additional Files              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Additional Files}
+  \subsection*{Additional file 1 --- Sample additional file title}
+    Additional file descriptions text (including details of how to
+    view the file, if it is in a non-standard format or the file extension).  This might
+    refer to a multi-page table or a figure.
+
+  \subsection*{Additional file 2 --- Sample additional file title}
+    Additional file descriptions text.
+
+
+\end{backmatter}
+\end{document}
