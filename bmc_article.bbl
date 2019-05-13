@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -377,6 +377,24 @@ arXiv preprint arXiv:1103.3434
 \endbibitem
 
 %%% 24
+\bibitem{hochheiser2003dynamic}
+\begin{bchapter}
+\bauthor{\bsnm{Hochheiser}, \binits{H.}},
+\bauthor{\bsnm{Baehrecke}, \binits{E.H.}},
+\bauthor{\bsnm{Mount}, \binits{S.M.}},
+\bauthor{\bsnm{Shneiderman}, \binits{B.}}:
+\bctitle{Dynamic querying for pattern identification in microarray and genomic
+  data}.
+In: \bbtitle{2003 International Conference on Multimedia and Expo. ICME'03.
+  Proceedings (Cat. No. 03TH8698)},
+vol. \bseriesno{3},
+p. \bfpage{453}
+(\byear{2003}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 25
 \bibitem{harshbarger2017deiva}
 \begin{barticle}
 \bauthor{\bsnm{Harshbarger}, \binits{J.}},
@@ -391,7 +409,7 @@ arXiv preprint arXiv:1103.3434
 \end{barticle}
 \endbibitem
 
-%%% 25
+%%% 26
 \bibitem{unwin2007computational}
 \begin{bbook}
 \bauthor{\bsnm{Unwin}, \binits{A.}},
@@ -404,7 +422,7 @@ arXiv preprint arXiv:1103.3434
 \end{bbook}
 \endbibitem
 
-%%% 26
+%%% 27
 \bibitem{yin2012ggbio}
 \begin{barticle}
 \bauthor{\bsnm{Yin}, \binits{T.}},
@@ -419,7 +437,7 @@ arXiv preprint arXiv:1103.3434
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 28
 \bibitem{andrienko2005blending}
 \begin{barticle}
 \bauthor{\bsnm{Andrienko}, \binits{G.}},
@@ -433,7 +451,7 @@ arXiv preprint arXiv:1103.3434
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 29
 \bibitem{nguyen2016deep}
 \begin{bchapter}
 \bauthor{\bsnm{Nguyen}, \binits{Q.V.}},
@@ -449,7 +467,7 @@ pp. \bfpage{43}--\blpage{50}
 \end{bchapter}
 \endbibitem
 
-%%% 29
+%%% 30
 \bibitem{albuquerque2009quality}
 \begin{bchapter}
 \bauthor{\bsnm{Albuquerque}, \binits{G.}},
@@ -464,7 +482,7 @@ pp. \bfpage{341}--\blpage{350}
 \end{bchapter}
 \endbibitem
 
-%%% 30
+%%% 31
 \bibitem{heinrich2012parallel}
 \begin{botherref}
 \oauthor{\bsnm{Heinrich}, \binits{J.}},
@@ -477,7 +495,7 @@ EuroVis--Short Papers,
 \end{botherref}
 \endbibitem
 
-%%% 31
+%%% 32
 \bibitem{swayne2003ggobi}
 \begin{barticle}
 \bauthor{\bsnm{Swayne}, \binits{D.F.}},
@@ -493,7 +511,7 @@ EuroVis--Short Papers,
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 33
 \bibitem{cook2007interactive}
 \begin{bbook}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -505,7 +523,7 @@ EuroVis--Short Papers,
 \end{bbook}
 \endbibitem
 
-%%% 33
+%%% 34
 \bibitem{htmlwidgets}
 \begin{botherref}
 \oauthor{\bsnm{Vaidyanathan}, \binits{R.}},
@@ -519,7 +537,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 34
+%%% 35
 \bibitem{ggplot2}
 \begin{bbook}
 \bauthor{\bsnm{Wickham}, \binits{H.}}:
@@ -529,7 +547,7 @@ Accessed 2018-12-20
 \end{bbook}
 \endbibitem
 
-%%% 35
+%%% 36
 \bibitem{shiny}
 \begin{botherref}
 \oauthor{\bsnm{Chang}, \binits{W.}},
@@ -543,7 +561,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 36
+%%% 37
 \bibitem{rstudio}
 \begin{botherref}
 RStudio: Integrated Development for R.
@@ -552,7 +570,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 37
+%%% 38
 \bibitem{plotly}
 \begin{botherref}
 \oauthor{\bsnm{Sievert}, \binits{C.}},
@@ -568,7 +586,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 38
+%%% 39
 \bibitem{pkgdown}
 \begin{botherref}
 \oauthor{\bsnm{Wickham}, \binits{H.}},
@@ -937,6 +955,23 @@ Accessed 2018-12-20
 </bibl>
 
 <bibl id="B24">
+  <title><p>Dynamic querying for pattern identification in microarray and
+  genomic data</p></title>
+  <aug>
+    <au><snm>Hochheiser</snm><fnm>H</fnm></au>
+    <au><snm>Baehrecke</snm><fnm>EH</fnm></au>
+    <au><snm>Mount</snm><fnm>SM</fnm></au>
+    <au><snm>Shneiderman</snm><fnm>B</fnm></au>
+  </aug>
+  <source>2003 International Conference on Multimedia and Expo. ICME'03.
+  Proceedings (Cat. No. 03TH8698)</source>
+  <pubdate>2003</pubdate>
+  <volume>3</volume>
+  <fpage>III</fpage>
+  <lpage>-453</lpage>
+</bibl>
+
+<bibl id="B25">
   <title><p>DEIVA: a web application for interactive visual analysis of
   differential gene expression profiles</p></title>
   <aug>
@@ -952,7 +987,7 @@ Accessed 2018-12-20
   <fpage>47</fpage>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B26">
   <title><p>Computational Statistics and Data Visualization</p></title>
   <aug>
     <au><snm>Unwin</snm><fnm>A</fnm></au>
@@ -964,7 +999,7 @@ Accessed 2018-12-20
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B27">
   <title><p>ggbio: an R package for extending the grammar of graphics for
   genomic data</p></title>
   <aug>
@@ -980,7 +1015,7 @@ Accessed 2018-12-20
   <fpage>R77</fpage>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B28">
   <title><p>Blending aggregation and selection: Adapting parallel coordinates
   for the visualization of large datasets</p></title>
   <aug>
@@ -996,7 +1031,7 @@ Accessed 2018-12-20
   <lpage>-60</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B29">
   <title><p>Deep exploration of multidimensional data with linkable
   scatterplots</p></title>
   <aug>
@@ -1012,7 +1047,7 @@ Accessed 2018-12-20
   <lpage>-50</lpage>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B30">
   <title><p>Quality-based visualization matrices.</p></title>
   <aug>
     <au><snm>Albuquerque</snm><fnm>G</fnm></au>
@@ -1027,7 +1062,7 @@ Accessed 2018-12-20
   <lpage>-350</lpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B31">
   <title><p>The parallel coordinates matrix</p></title>
   <aug>
     <au><snm>Heinrich</snm><fnm>J</fnm></au>
@@ -1040,7 +1075,7 @@ Accessed 2018-12-20
   <lpage>-41</lpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B32">
   <title><p>GGobi: evolving from XGobi into an extensible framework for
   interactive data visualization</p></title>
   <aug>
@@ -1058,7 +1093,7 @@ Accessed 2018-12-20
   <lpage>-444</lpage>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B33">
   <title><p>Interactive and dynamic graphics for data analysis: with R and
   GGobi</p></title>
   <aug>
@@ -1070,7 +1105,7 @@ Accessed 2018-12-20
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B34">
   <title><p>htmlwidgets: HTML Widgets for R, 2016</p></title>
   <aug>
     <au><snm>Vaidyanathan</snm><fnm>R</fnm></au>
@@ -1082,7 +1117,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=htmlwidgets</url>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B35">
   <title><p>ggplot2: elegant graphics for data analysis</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
@@ -1091,7 +1126,7 @@ Accessed 2018-12-20
   <pubdate>2016</pubdate>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B36">
   <title><p>shiny: Web application framework for R [Computer
   software]</p></title>
   <aug>
@@ -1104,12 +1139,12 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=shiny</url>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B37">
   <title><p>RStudio: integrated development for R</p></title>
   <url>http://www.rstudio.com</url>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B38">
   <title><p>plotly: Create Interactive Web Graphics via 'plotly.js'</p></title>
   <aug>
     <au><snm>Sievert</snm><fnm>C</fnm></au>
@@ -1123,7 +1158,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=plotly</url>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B39">
   <title><p>pkgdown: Make static HTML documentation for a package</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
