@@ -257,26 +257,28 @@ Several methods in bigPint also require an input parameter dataMetrics object. I
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Original features}
 
-\subsubsection*{Separate layers of dynamics and interactivity}
+\subsubsection*{1. Independent layers of interactivity}
 
-The Bioconductor community advanced the boundaries of biological visualization in the past and believes that interactive technology must be incorporated to continue these advancements in the future \cite{gentleman2004bioconductor}. We developed what we believe is a fairly new interactive visualization technology that could be useful in the exploration of many types of large biological datasets. Our technique allows for two separate layers of interactive and dynamic capabilities, one for the foreground of the plot and one for the background of the plot. With interaction, users can interact with displayed data. This could mean hovering over a graphical representation of the data (such as a hexagon) to obtain metadata about the elements within that graphical representation (such as the names of its contained genes). 
+The Bioconductor community advanced the boundaries of biological visualization in the past and believes that interactive technology must be incorporated to continue these advancements in the future \cite{gentleman2004bioconductor}. We will use the term \textit{geom-drawing interactivity} to indicate user queries that draw geoms (graphical representation of the data, such as lines, hexagons, and points). This could mean the user adjusts sliders or selects buttons to draw a subset of data from the database as geoms (such as points). We will use the term \textit{geom-manipulating interactivity} to indicate user interaction with already-drawn geoms. This could mean the user hovers over a geom (such as a hexagon) and obtains its associated metadata (such as the names of its contained genes). It could also mean the user zooming and panning to further alter how already-drawn geoms are displayed.
 
+Our package introduces what we believe is a fairly new interactive visualization technology that is useful in the exploration of large biological datasets. Our technique allows for two independent layers of interactivity, for the foreground and background of the plot respectively. Each layer can include both geom-drawing and geom-manipulating interactivity. Our new technology can greatly enhance the exploration of large datasets, especially in cases where one layer contains large amounts of data (such as the full dataset) and the other layer contains smaller amounts of data (such as a data subset). Because the layers are independent, users can save time and computation by keeping the layer with more data drawn as is while only redrawing the layer with less data. We will now provide concrete examples of how this new two-layered interactivity method can improve upon several of the RNA-seq visualization tools in our package. 
 
-This is especially true with large RNA-seq datasets, where the background can contain the entire dataset and the foreground can contain only a subset of the dataset (such as one or more DEGs). A user may wish to overlay one DEG in the foreground across the entire dataset in the background
+\subsubsection*{1a. Scatterplot matrices}
 
-\subsubsection*{1. Scatterplot matrices}
+Scatterplot matrices have appeared in statistical graphics literature for almost four decades and used across various fields of research \cite{becker1984brushing, carr1984graphical, tufte2001visual, tukey1981graphical}. Previous user studies have shown that participants performed better when using animated rather than static versions of scatterplot matrices. Users also preferred animated scatterplot matrices and found them easier to understand as they can alleviate overplotting issues \cite{chen2018using}. Interaction has been shown to extend the scatterplot matrix into an effective tool when representing large datasets \cite{carr1987scatterplot}. We believe our new interactive visualization technology may further improve upon this long-standing plotting technique known for its effectiveness in exploratory multivariate data analysis.
 
-Scatterplot matrices have appeared in statistical graphics literature for almost four decades and used across various fields of research \cite{becker1984brushing, carr1984graphical, tufte2001visual, tukey1981graphical}. Previous user studies have shown that participants performed better when using animated rather than static versions of scatterplot matrices. Users also preferred animated scatterplot matrices and found them easier to understand as they can alleviate overplotting issues \cite{chen2018using}. Interaction has been shown to extend the scatterplot matrix into an effective tool when representing large datasets \cite{carr1987scatterplot}. We believe our new interactive visualization technology may further improve upon this long-standing plotting technique known for its effectiveness in exploratory multivariate data analysis .
-
-\subsubsection*{2. Litre plots}
+\subsubsection*{1b. Litre plots}
 
 Problems still remain when scatterplot matrices are applied to large datasets. Physical space requirements grow exponentially by dimension size: for $n$-dimensional data, $n^2$ scatterplots are typically drawn. Hence, when extended to large dimensions, it becomes difficult to mentally link many small plots within the matrix \cite{kerren2007human}. Several techniques have been proposed to ameloriate this problem. Three dimensional scatterplots are useful but can cause occlusion and depth perception issues \cite{kerren2007human}. Other techniques like grand tours \cite{asimov1985grand}, projection pursuits \cite{friedman1974projection, cook1995grand}, and scagnostics \cite{wilkinson2005graph} have been proposed.
 
-Even though these alternative techniques are useful, they do not draw distributions across all cases (genes) and variables (samples). When analyzing RNA-seq data, we mainly want to compare replicate and treatment variability, which can be visually accomplished by plotting all genes and samples. It is useful to then superimpose DEGs to determine how they compare to the dataset as a whole. In light of this, we developed a plot that collapses the scatterplot matrix into one Cartesian coordinate system, allowing users to visualize the samples of one DEG of interest onto the samples of all genes in the dataset. We call this new plot a repLIcate TREatment (``litre'') plot. An in depth explanation about the litre plot can be found in our previous methods paper \cite{rutter1}.
+Even though these alternative techniques are useful, they do not draw distributions across all cases (genes) and variables (samples). When analyzing RNA-seq data, we mainly want to compare replicate and treatment variability, which can be visually accomplished by plotting all genes and samples. It is useful to then superimpose DEGs to determine how they compare to the dataset as a whole. In light of this, we developed a plot that collapses the scatterplot matrix into one Cartesian coordinate system, allowing users to visualize all samples from one DEG of interest onto all samples of all genes in the dataset. We call this new plot a repLIcate TREatment (``litre'') plot. An in depth explanation about the litre plot can be found in our previous methods paper \cite{rutter1}.
 
-We believe our interactive visualization technology is necessary for the litre plot. Drawing the background (all genes in the dataset) is the limiting step for time and computation. Drawing the foreground (one DEG of interest) is immediate. Most users would like to quickly superimpose DEGs from a list one by one onto the background. This would be unnecessarily time-prohibiting if the background were redrawn as the user flipped through the DEG list. Fortunately, our technology allows the background to remain unchanged while preserving its interactive capabilities (hovering, zooming, panning) as the user continuously updates the foreground with superimposed DEGs.
+We believe our interactive visualization technology is necessary for the litre plot. Drawing the background (all genes in the dataset) is the time-limiting step, whereas drawing the foreground (one DEG of interest) is immediate. Most users would like to quickly superimpose DEGs from a list one by one onto the background. This process would be unnecessarily time-prohibiting if the background needed to be redrawn each time the user superimposed the next DEG. Fortunately, our technology allows the user to immediately redraw the interactive foreground while the background remains unchanged but preserved in its interactive capabilities (hovering, zooming, and panning).
 
-\subsubsection*{3. Volcano plots}
+\subsubsection*{1c. Volcano plots}
+
+Volcano plots draw significance and fold change on the vertical and horizontal axes respectively. In RNA-seq studies, volcano plots allow users to check that genes were not falsely deemed significant due to outliers, low expression levels, and batch effects \cite{li2011application}. Researchers can benefit from the ability to quickly identify individual gene names in the volcano plot. This has been achieved with the identify() method in R, which identifies the closest point in a scatterplot to the position clicked by the mouse \cite{li2011application}. We believe our interactive technology adds additional benefits to the volcano plot whereby users can filter on both statistics to immediately update the superimposed gene subset without having to redraw the more computationally-heavy background that contains all genes.
+
 
 
 
@@ -422,17 +424,30 @@ bigPint was released under the GPL-3 license. Most bigPint visualization methods
 
 %% Use of \listoftables is discouraged.
 %%
-% \section*{Tables}
-% \begin{table}[h!]
-% \caption{Sample table title. This is where the description of the table should go.}
-%       \begin{tabular}{cccc}
-%         \hline
-%            & B1  &B2   & B3\\ \hline
-%         A1 & 0.1 & 0.2 & 0.3\\
-%         A2 & ... & ..  & .\\
-%         A3 & ..  & .   & .\\ \hline
-%       \end{tabular}
-% \end{table}
+\section*{Tables}
+\begin{table}[h!]
+\caption{Sample table title. This is where the description of the table should go.}
+      \begin{tabular}{cccc}
+        \hline
+           & B1  &B2   & B3\\ \hline
+        A1 & 0.1 & 0.2 & 0.3\\
+        A2 & ... & ..  & .\\
+        A3 & ..  & .   & .\\ \hline
+      \end{tabular}
+\end{table}
+
+\section*{Tables}
+\begin{table}[h!]
+\caption{Sample table title. This is where the description of the table should go.}
+      \begin{tabular}{cccc}
+        \hline
+           & B1  &B2   & B3\\ \hline
+        A1 & 0.1 & 0.2 & 0.3\\
+        A2 & ... & ..  & .\\
+        A3 & ..  & .   & .\\ \hline
+      \end{tabular}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%

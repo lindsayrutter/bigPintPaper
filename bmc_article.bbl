@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{33}
+\begin{thebibliography}{38}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -312,6 +312,71 @@ vol. \bseriesno{4417}.
 \endbibitem
 
 %%% 19
+\bibitem{asimov1985grand}
+\begin{barticle}
+\bauthor{\bsnm{Asimov}, \binits{D.}}:
+\batitle{The grand tour: a tool for viewing multidimensional data}.
+\bjtitle{SIAM journal on scientific and statistical computing}
+\bvolume{6}(\bissue{1}),
+\bfpage{128}--\blpage{143}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem{friedman1974projection}
+\begin{barticle}
+\bauthor{\bsnm{Friedman}, \binits{J.H.}},
+\bauthor{\bsnm{Tukey}, \binits{J.W.}}:
+\batitle{A projection pursuit algorithm for exploratory data analysis}.
+\bjtitle{IEEE Transactions on computers}
+\bvolume{100}(\bissue{9}),
+\bfpage{881}--\blpage{890}
+(\byear{1974})
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem{cook1995grand}
+\begin{barticle}
+\bauthor{\bsnm{Cook}, \binits{D.}},
+\bauthor{\bsnm{Buja}, \binits{A.}},
+\bauthor{\bsnm{Cabrera}, \binits{J.}},
+\bauthor{\bsnm{Hurley}, \binits{C.}}:
+\batitle{Grand tour and projection pursuit}.
+\bjtitle{Journal of Computational and Graphical Statistics}
+\bvolume{4}(\bissue{3}),
+\bfpage{155}--\blpage{172}
+(\byear{1995})
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem{wilkinson2005graph}
+\begin{bchapter}
+\bauthor{\bsnm{Wilkinson}, \binits{L.}},
+\bauthor{\bsnm{Anand}, \binits{A.}},
+\bauthor{\bsnm{Grossman}, \binits{R.}}:
+\bctitle{Graph-theoretic scagnostics}.
+In: \bbtitle{IEEE Symposium on Information Visualization, 2005. INFOVIS 2005.},
+pp. \bfpage{157}--\blpage{164}
+(\byear{2005}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 23
+\bibitem{li2011application}
+\begin{botherref}
+\oauthor{\bsnm{Li}, \binits{W.}}:
+Application of volcano plots in analyses of mrna differential expressions with
+  microarrays.
+arXiv preprint arXiv:1103.3434
+(2011)
+\end{botherref}
+\endbibitem
+
+%%% 24
 \bibitem{harshbarger2017deiva}
 \begin{barticle}
 \bauthor{\bsnm{Harshbarger}, \binits{J.}},
@@ -326,7 +391,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 20
+%%% 25
 \bibitem{unwin2007computational}
 \begin{bbook}
 \bauthor{\bsnm{Unwin}, \binits{A.}},
@@ -339,7 +404,7 @@ vol. \bseriesno{4417}.
 \end{bbook}
 \endbibitem
 
-%%% 21
+%%% 26
 \bibitem{yin2012ggbio}
 \begin{barticle}
 \bauthor{\bsnm{Yin}, \binits{T.}},
@@ -354,7 +419,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 22
+%%% 27
 \bibitem{andrienko2005blending}
 \begin{barticle}
 \bauthor{\bsnm{Andrienko}, \binits{G.}},
@@ -368,7 +433,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 23
+%%% 28
 \bibitem{nguyen2016deep}
 \begin{bchapter}
 \bauthor{\bsnm{Nguyen}, \binits{Q.V.}},
@@ -384,7 +449,7 @@ pp. \bfpage{43}--\blpage{50}
 \end{bchapter}
 \endbibitem
 
-%%% 24
+%%% 29
 \bibitem{albuquerque2009quality}
 \begin{bchapter}
 \bauthor{\bsnm{Albuquerque}, \binits{G.}},
@@ -399,7 +464,7 @@ pp. \bfpage{341}--\blpage{350}
 \end{bchapter}
 \endbibitem
 
-%%% 25
+%%% 30
 \bibitem{heinrich2012parallel}
 \begin{botherref}
 \oauthor{\bsnm{Heinrich}, \binits{J.}},
@@ -412,7 +477,7 @@ EuroVis--Short Papers,
 \end{botherref}
 \endbibitem
 
-%%% 26
+%%% 31
 \bibitem{swayne2003ggobi}
 \begin{barticle}
 \bauthor{\bsnm{Swayne}, \binits{D.F.}},
@@ -428,7 +493,7 @@ EuroVis--Short Papers,
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 32
 \bibitem{cook2007interactive}
 \begin{bbook}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -440,7 +505,7 @@ EuroVis--Short Papers,
 \end{bbook}
 \endbibitem
 
-%%% 28
+%%% 33
 \bibitem{htmlwidgets}
 \begin{botherref}
 \oauthor{\bsnm{Vaidyanathan}, \binits{R.}},
@@ -454,7 +519,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 29
+%%% 34
 \bibitem{ggplot2}
 \begin{bbook}
 \bauthor{\bsnm{Wickham}, \binits{H.}}:
@@ -464,7 +529,7 @@ Accessed 2018-12-20
 \end{bbook}
 \endbibitem
 
-%%% 30
+%%% 35
 \bibitem{shiny}
 \begin{botherref}
 \oauthor{\bsnm{Chang}, \binits{W.}},
@@ -478,7 +543,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 31
+%%% 36
 \bibitem{rstudio}
 \begin{botherref}
 RStudio: Integrated Development for R.
@@ -487,7 +552,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 32
+%%% 37
 \bibitem{plotly}
 \begin{botherref}
 \oauthor{\bsnm{Sievert}, \binits{C.}},
@@ -503,7 +568,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 33
+%%% 38
 \bibitem{pkgdown}
 \begin{botherref}
 \oauthor{\bsnm{Wickham}, \binits{H.}},
@@ -800,6 +865,78 @@ Accessed 2018-12-20
 </bibl>
 
 <bibl id="B19">
+  <title><p>The grand tour: a tool for viewing multidimensional
+  data</p></title>
+  <aug>
+    <au><snm>Asimov</snm><fnm>D</fnm></au>
+  </aug>
+  <source>SIAM journal on scientific and statistical computing</source>
+  <publisher>SIAM</publisher>
+  <pubdate>1985</pubdate>
+  <volume>6</volume>
+  <issue>1</issue>
+  <fpage>128</fpage>
+  <lpage>-143</lpage>
+</bibl>
+
+<bibl id="B20">
+  <title><p>A projection pursuit algorithm for exploratory data
+  analysis</p></title>
+  <aug>
+    <au><snm>Friedman</snm><fnm>JH</fnm></au>
+    <au><snm>Tukey</snm><fnm>JW</fnm></au>
+  </aug>
+  <source>IEEE Transactions on computers</source>
+  <publisher>IEEE</publisher>
+  <pubdate>1974</pubdate>
+  <volume>100</volume>
+  <issue>9</issue>
+  <fpage>881</fpage>
+  <lpage>-890</lpage>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Grand tour and projection pursuit</p></title>
+  <aug>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+    <au><snm>Buja</snm><fnm>A</fnm></au>
+    <au><snm>Cabrera</snm><fnm>J</fnm></au>
+    <au><snm>Hurley</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Journal of Computational and Graphical Statistics</source>
+  <publisher>Taylor \& Francis Group</publisher>
+  <pubdate>1995</pubdate>
+  <volume>4</volume>
+  <issue>3</issue>
+  <fpage>155</fpage>
+  <lpage>-172</lpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>Graph-theoretic scagnostics</p></title>
+  <aug>
+    <au><snm>Wilkinson</snm><fnm>L</fnm></au>
+    <au><snm>Anand</snm><fnm>A</fnm></au>
+    <au><snm>Grossman</snm><fnm>R</fnm></au>
+  </aug>
+  <source>IEEE Symposium on Information Visualization, 2005. INFOVIS
+  2005.</source>
+  <pubdate>2005</pubdate>
+  <fpage>157</fpage>
+  <lpage>-164</lpage>
+</bibl>
+
+<bibl id="B23">
+  <title><p>Application of volcano plots in analyses of mRNA differential
+  expressions with microarrays</p></title>
+  <aug>
+    <au><snm>Li</snm><fnm>W</fnm></au>
+  </aug>
+  <source>arXiv preprint arXiv:1103.3434</source>
+  <pubdate>2011</pubdate>
+</bibl>
+
+<bibl id="B24">
   <title><p>DEIVA: a web application for interactive visual analysis of
   differential gene expression profiles</p></title>
   <aug>
@@ -815,7 +952,7 @@ Accessed 2018-12-20
   <fpage>47</fpage>
 </bibl>
 
-<bibl id="B20">
+<bibl id="B25">
   <title><p>Computational Statistics and Data Visualization</p></title>
   <aug>
     <au><snm>Unwin</snm><fnm>A</fnm></au>
@@ -827,7 +964,7 @@ Accessed 2018-12-20
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B21">
+<bibl id="B26">
   <title><p>ggbio: an R package for extending the grammar of graphics for
   genomic data</p></title>
   <aug>
@@ -843,7 +980,7 @@ Accessed 2018-12-20
   <fpage>R77</fpage>
 </bibl>
 
-<bibl id="B22">
+<bibl id="B27">
   <title><p>Blending aggregation and selection: Adapting parallel coordinates
   for the visualization of large datasets</p></title>
   <aug>
@@ -859,7 +996,7 @@ Accessed 2018-12-20
   <lpage>-60</lpage>
 </bibl>
 
-<bibl id="B23">
+<bibl id="B28">
   <title><p>Deep exploration of multidimensional data with linkable
   scatterplots</p></title>
   <aug>
@@ -875,7 +1012,7 @@ Accessed 2018-12-20
   <lpage>-50</lpage>
 </bibl>
 
-<bibl id="B24">
+<bibl id="B29">
   <title><p>Quality-based visualization matrices.</p></title>
   <aug>
     <au><snm>Albuquerque</snm><fnm>G</fnm></au>
@@ -890,7 +1027,7 @@ Accessed 2018-12-20
   <lpage>-350</lpage>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B30">
   <title><p>The parallel coordinates matrix</p></title>
   <aug>
     <au><snm>Heinrich</snm><fnm>J</fnm></au>
@@ -903,7 +1040,7 @@ Accessed 2018-12-20
   <lpage>-41</lpage>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B31">
   <title><p>GGobi: evolving from XGobi into an extensible framework for
   interactive data visualization</p></title>
   <aug>
@@ -921,7 +1058,7 @@ Accessed 2018-12-20
   <lpage>-444</lpage>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B32">
   <title><p>Interactive and dynamic graphics for data analysis: with R and
   GGobi</p></title>
   <aug>
@@ -933,7 +1070,7 @@ Accessed 2018-12-20
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B33">
   <title><p>htmlwidgets: HTML Widgets for R, 2016</p></title>
   <aug>
     <au><snm>Vaidyanathan</snm><fnm>R</fnm></au>
@@ -945,7 +1082,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=htmlwidgets</url>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B34">
   <title><p>ggplot2: elegant graphics for data analysis</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
@@ -954,7 +1091,7 @@ Accessed 2018-12-20
   <pubdate>2016</pubdate>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B35">
   <title><p>shiny: Web application framework for R [Computer
   software]</p></title>
   <aug>
@@ -967,12 +1104,12 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=shiny</url>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B36">
   <title><p>RStudio: integrated development for R</p></title>
   <url>http://www.rstudio.com</url>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B37">
   <title><p>plotly: Create Interactive Web Graphics via 'plotly.js'</p></title>
   <aug>
     <au><snm>Sievert</snm><fnm>C</fnm></au>
@@ -986,7 +1123,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=plotly</url>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B38">
   <title><p>pkgdown: Make static HTML documentation for a package</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
