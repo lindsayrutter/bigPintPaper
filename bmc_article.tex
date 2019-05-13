@@ -46,6 +46,8 @@
 %\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
 \documentclass{bmcart}
 
+\usepackage{array,multirow,graphicx}
+
 %%% Load packages
 %\usepackage{amsthm,amsmath}
 %\RequirePackage{natbib}
@@ -54,7 +56,11 @@
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
-
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
@@ -424,29 +430,78 @@ bigPint was released under the GPL-3 license. Most bigPint visualization methods
 
 %% Use of \listoftables is discouraged.
 %%
-\section*{Tables}
-\begin{table}[h!]
-\caption{Sample table title. This is where the description of the table should go.}
-      \begin{tabular}{cccc}
-        \hline
-           & B1  &B2   & B3\\ \hline
-        A1 & 0.1 & 0.2 & 0.3\\
-        A2 & ... & ..  & .\\
-        A3 & ..  & .   & .\\ \hline
-      \end{tabular}
+% \section*{Tables}
+% \begin{table}[h!]
+% \caption{Sample table title. This is where the description of the table should go.}
+%       \begin{tabular}{cccc}
+%         \hline
+%            & B1  &B2   & B3\\ \hline
+%         A1 & 0.1 & 0.2 & 0.3\\
+%         A2 & ... & ..  & .\\
+%         A3 & ..  & .   & .\\ \hline
+%       \end{tabular}
+% \end{table}
+
+\begin{table}[h]
+\begin{center}
+\centering\begin{tabular}{|p{0.8cm}|p{1.2cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Plot} & \textbf{Layer} & \textbf{Geom-drawing} & \textbf{Geom-manipulation} \\ \hline
+
+\parbox[t]{2mm}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\makecell{Scatterplot \\ matrix}}}}
+& \multicolumn{1}{c|}{\multirow{2}{*}{Background}}
+& None & User hovers over background hexagons to view gene counts \\ \cline{2-4}
+
+& \multirow{2}{*}{Foreground} & User clicks on background hexagon to draw corresponding genes as foreground points & User hovers over foreground points to view gene names \\ \hline
+
+\parbox[t]{2mm}{\multirow{7}{*}{\rotatebox[origin=c]{90}{\makecell{Litre \\ plot}}}}
+& \multirow{3}{*}{Background}
+& User uses Shiny buttons to specify treatment pairs and hexagon sizes for drawing background hexagons & User hovers over background hexagons to view gene counts \\ \cline{2-4}
+
+& \multirow{4}{*}{Foreground} & User uses Shiny buttons to specify metric, metric order, and point size for drawing foreground points. Background layer does not need to be redrawn &  User hovers over foreground points to view gene names \\ \hline
+
+\parbox[t]{2mm}{\multirow{7}{*}{\centering\rotatebox[origin=c]{90}{\makecell{Volcano \\ plot}}}}
+& \multirow{3}{*}{Background}
+& User uses Shiny buttons to specify treatment pairs and hexagon sizes for drawing background hexagons & User hovers over background hexagons to view gene counts \\ \cline{2-4}
+
+& \multirow{4}{*}{Foreground} & User uses Shiny buttons to specify point size, log fold changes, pvalues to draw foreground points. Background hexagons do not need to be redrawn & User hovers over foreground points to view gene names \\ \hline
+
+
+\end{tabular}
+\end{center}
 \end{table}
 
-\section*{Tables}
-\begin{table}[h!]
-\caption{Sample table title. This is where the description of the table should go.}
-      \begin{tabular}{cccc}
-        \hline
-           & B1  &B2   & B3\\ \hline
-        A1 & 0.1 & 0.2 & 0.3\\
-        A2 & ... & ..  & .\\
-        A3 & ..  & .   & .\\ \hline
-      \end{tabular}
-\end{table}
+
+%         Volcano plot & & \\
+%         Background & User clicks Shiny buttons to specify treatment pairs and hexagon sizes to draw background hexagons & User hovers over background hexagons to view gene counts \\ \hline
+%         Foreground & User clicks Shiny buttons to specify point size, log fold changes, pvalues to draw foreground points. Background hexagons do not need to be redrawn & User hovers over foreground points to view gene names  \\
+
+
+
+
+
+
+
+
+
+
+
+% \begin{table}[h]
+% \begin{tabular}{|c|c|c|c|}
+% \hline
+% & & Geom-drawing & Geom-manipulation \\ \hline
+% \parbox[t]{2mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{Scatterplot matrix}}}
+% & Background & description & description \\ %\cline{2-4} 
+% & Foreground & description & description \\ %\cline{3-4} \\ \hline
+% \parbox[t]{2mm}{\multirow{2}{*}{\rotatebox[origin=c]{90}{Litre plot}}}
+% & Background & description & description \\ %\cline{2-4} 
+% & Foreground & description & description \\ %\cline{3-4} 
+% \end{tabular}
+% \end{table}
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
