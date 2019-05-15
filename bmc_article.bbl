@@ -1,0 +1,1349 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{44}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem{o2010visualizing}
+\begin{barticle}
+\bauthor{\bsnm{O'Donoghue}, \binits{S.I.}},
+\bauthor{\bsnm{Gavin}, \binits{A.-C.}},
+\bauthor{\bsnm{Gehlenborg}, \binits{N.}},
+\bauthor{\bsnm{Goodsell}, \binits{D.S.}},
+\bauthor{\bsnm{H{\'e}rich{\'e}}, \binits{J.-K.}},
+\bauthor{\bsnm{Nielsen}, \binits{C.B.}},
+\bauthor{\bsnm{North}, \binits{C.}},
+\bauthor{\bsnm{Olson}, \binits{A.J.}},
+\bauthor{\bsnm{Procter}, \binits{J.B.}},
+\bauthor{\bsnm{Shattuck}, \binits{D.W.}}, \betal:
+\batitle{Visualizing biological data—now and in the future}.
+\bjtitle{Nature methods}
+\bvolume{7}(\bissue{3}),
+\bfpage{2}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 2
+\bibitem{pavlopoulos2015visualizing}
+\begin{barticle}
+\bauthor{\bsnm{Pavlopoulos}, \binits{G.A.}},
+\bauthor{\bsnm{Malliarakis}, \binits{D.}},
+\bauthor{\bsnm{Papanikolaou}, \binits{N.}},
+\bauthor{\bsnm{Theodosiou}, \binits{T.}},
+\bauthor{\bsnm{Enright}, \binits{A.J.}},
+\bauthor{\bsnm{Iliopoulos}, \binits{I.}}:
+\batitle{Visualizing genome and systems biology: technologies, tools,
+  implementation techniques and trends, past, present and future}.
+\bjtitle{Gigascience}
+\bvolume{4}(\bissue{1}),
+\bfpage{38}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem{seo2002interactively}
+\begin{barticle}
+\bauthor{\bsnm{Seo}, \binits{J.}},
+\bauthor{\bsnm{Shneiderman}, \binits{B.}}:
+\batitle{Interactively exploring hierarchical clustering results [gene
+  identification]}.
+\bjtitle{Computer}
+\bvolume{35}(\bissue{7}),
+\bfpage{80}--\blpage{86}
+(\byear{2002})
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem{ahlberg1996spotfire}
+\begin{barticle}
+\bauthor{\bsnm{Ahlberg}, \binits{C.}}:
+\batitle{Spotfire: an information exploration environment}.
+\bjtitle{ACM SIGMOD Record}
+\bvolume{25}(\bissue{4}),
+\bfpage{25}--\blpage{29}
+(\byear{1996})
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{chu2001genespringtm}
+\begin{barticle}
+\bauthor{\bsnm{Chu}, \binits{L.}},
+\bauthor{\bsnm{Scharf}, \binits{E.}},
+\bauthor{\bsnm{Kondo}, \binits{T.}}:
+\batitle{Genespringtm: tools for analyzing microarray expression data}.
+\bjtitle{Genome Informatics}
+\bvolume{12},
+\bfpage{227}--\blpage{229}
+(\byear{2001})
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem{gentleman2004bioconductor}
+\begin{barticle}
+\bauthor{\bsnm{Gentleman}, \binits{R.C.}},
+\bauthor{\bsnm{Carey}, \binits{V.J.}},
+\bauthor{\bsnm{Bates}, \binits{D.M.}},
+\bauthor{\bsnm{Bolstad}, \binits{B.}},
+\bauthor{\bsnm{Dettling}, \binits{M.}},
+\bauthor{\bsnm{Dudoit}, \binits{S.}},
+\bauthor{\bsnm{Ellis}, \binits{B.}},
+\bauthor{\bsnm{Gautier}, \binits{L.}},
+\bauthor{\bsnm{Ge}, \binits{Y.}},
+\bauthor{\bsnm{Gentry}, \binits{J.}}, \betal:
+\batitle{Bioconductor: open software development for computational biology and
+  bioinformatics}.
+\bjtitle{Genome biology}
+\bvolume{5}(\bissue{10}),
+\bfpage{80}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{rue2018isee}
+\begin{botherref}
+\oauthor{\bsnm{Rue-Albrecht}, \binits{K.}},
+\oauthor{\bsnm{Marini}, \binits{F.}},
+\oauthor{\bsnm{Soneson}, \binits{C.}},
+\oauthor{\bsnm{Lun}, \binits{A.T.}}:
+isee: Interactive summarizedexperiment explorer.
+F1000Research
+\textbf{7}
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 8
+\bibitem{schultheis2018wilson}
+\begin{barticle}
+\bauthor{\bsnm{Schultheis}, \binits{H.}},
+\bauthor{\bsnm{Kuenne}, \binits{C.}},
+\bauthor{\bsnm{Preussner}, \binits{J.}},
+\bauthor{\bsnm{Wiegandt}, \binits{R.}},
+\bauthor{\bsnm{Fust}, \binits{A.}},
+\bauthor{\bsnm{Bentsen}, \binits{M.}},
+\bauthor{\bsnm{Looso}, \binits{M.}}:
+\batitle{Wilson: Web-based interactive omics visualization}.
+\bjtitle{Bioinformatics}
+\bvolume{35}(\bissue{6}),
+\bfpage{1055}--\blpage{1057}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem{hughes2017expressiondb}
+\begin{barticle}
+\bauthor{\bsnm{Hughes}, \binits{L.D.}},
+\bauthor{\bsnm{Lewis}, \binits{S.A.}},
+\bauthor{\bsnm{Hughes}, \binits{M.E.}}:
+\batitle{Expressiondb: An open source platform for distributing genome-scale
+  datasets}.
+\bjtitle{PloS one}
+\bvolume{12}(\bissue{11}),
+\bfpage{0187457}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{rutter1}
+\begin{botherref}
+\oauthor{\bsnm{Rutter}, \binits{L.}},
+\oauthor{\bsnm{Moran~Lauter}, \binits{A.N.}},
+\oauthor{\bsnm{Graham}, \binits{M.A.}},
+\oauthor{\bsnm{Cook}, \binits{D.}}:
+Visualization methods for rna-sequencing data analysis.
+Submitted to BMC Bioinformatics
+\end{botherref}
+\endbibitem
+
+%%% 11
+\bibitem{rutter2}
+\begin{botherref}
+\oauthor{\bsnm{Rutter}, \binits{L.}},
+\oauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
+\oauthor{\bsnm{Bonning}, \binits{B.C.}},
+\oauthor{\bsnm{Cook}, \binits{D.}},
+\oauthor{\bsnm{Toth}, \binits{A.L.}},
+\oauthor{\bsnm{Dolezal}, \binits{A.G.}}:
+Transcriptomic responses to diet quality and viral infection in apis mellifera.
+Submitted to BMC Genomics
+\end{botherref}
+\endbibitem
+
+%%% 12
+\bibitem{deseq2}
+\begin{barticle}
+\bauthor{\bsnm{Love}, \binits{M.I.}},
+\bauthor{\bsnm{Huber}, \binits{W.}},
+\bauthor{\bsnm{Anders}, \binits{S.}}:
+\batitle{Moderated estimation of fold change and dispersion for rna-seq data
+  with deseq2}.
+\bjtitle{Genome biology}
+\bvolume{15}(\bissue{12}),
+\bfpage{550}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem{edger}
+\begin{barticle}
+\bauthor{\bsnm{Robinson}, \binits{M.D.}},
+\bauthor{\bsnm{McCarthy}, \binits{D.J.}},
+\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
+\batitle{edger: a bioconductor package for differential expression analysis of
+  digital gene expression data}.
+\bjtitle{Bioinformatics}
+\bvolume{26}(\bissue{1}),
+\bfpage{139}--\blpage{140}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem{limma}
+\begin{barticle}
+\bauthor{\bsnm{Ritchie}, \binits{M.E.}},
+\bauthor{\bsnm{Phipson}, \binits{B.}},
+\bauthor{\bsnm{Wu}, \binits{D.}},
+\bauthor{\bsnm{Hu}, \binits{Y.}},
+\bauthor{\bsnm{Law}, \binits{C.W.}},
+\bauthor{\bsnm{Shi}, \binits{W.}},
+\bauthor{\bsnm{Smyth}, \binits{G.K.}}:
+\batitle{limma powers differential expression analyses for rna-sequencing and
+  microarray studies}.
+\bjtitle{Nucleic acids research}
+\bvolume{43}(\bissue{7}),
+\bfpage{47}--\blpage{47}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem{ebseq}
+\begin{barticle}
+\bauthor{\bsnm{Leng}, \binits{N.}},
+\bauthor{\bsnm{Dawson}, \binits{J.A.}},
+\bauthor{\bsnm{Thomson}, \binits{J.A.}},
+\bauthor{\bsnm{Ruotti}, \binits{V.}},
+\bauthor{\bsnm{Rissman}, \binits{A.I.}},
+\bauthor{\bsnm{Smits}, \binits{B.M.}},
+\bauthor{\bsnm{Haag}, \binits{J.D.}},
+\bauthor{\bsnm{Gould}, \binits{M.N.}},
+\bauthor{\bsnm{Stewart}, \binits{R.M.}},
+\bauthor{\bsnm{Kendziorski}, \binits{C.}}:
+\batitle{Ebseq: an empirical bayes hierarchical model for inference in rna-seq
+  experiments}.
+\bjtitle{Bioinformatics}
+\bvolume{29}(\bissue{8}),
+\bfpage{1035}--\blpage{1043}
+(\byear{2013})
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem{bayseq}
+\begin{barticle}
+\bauthor{\bsnm{Hardcastle}, \binits{T.J.}},
+\bauthor{\bsnm{Kelly}, \binits{K.A.}}:
+\batitle{bayseq: empirical bayesian methods for identifying differential
+  expression in sequence count data}.
+\bjtitle{BMC bioinformatics}
+\bvolume{11}(\bissue{1}),
+\bfpage{422}
+(\byear{2010})
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem{becker1984brushing}
+\begin{botherref}
+\oauthor{\bsnm{Becker}, \binits{R.A.}},
+\oauthor{\bsnm{Cleveland}, \binits{W.S.}}:
+Brushing a scatterplot matrix: High-interaction graphical methods for analyzing
+  multidimensional data.
+submitted for publication
+(1984)
+\end{botherref}
+\endbibitem
+
+%%% 18
+\bibitem{carr1984graphical}
+\begin{botherref}
+\oauthor{\bsnm{Carr}, \binits{D.}},
+\oauthor{\bsnm{Nicholson}, \binits{W.}}:
+Graphical interaction tools for multiple 2-and 3-dimensional scatterplots.
+Technical report,
+Pacific Northwest Lab., Richland, WA (USA)
+(1984)
+\end{botherref}
+\endbibitem
+
+%%% 19
+\bibitem{tufte2001visual}
+\begin{bbook}
+\bauthor{\bsnm{Tufte}, \binits{E.R.}}:
+\bbtitle{The Visual Display of Quantitative Information}
+vol. \bseriesno{2}.
+\bpublisher{Graphics press Cheshire, CT}, \blocation{???}
+(\byear{2001})
+\end{bbook}
+\endbibitem
+
+%%% 20
+\bibitem{tukey1981graphical}
+\begin{botherref}
+\oauthor{\bsnm{Tukey}, \binits{P.}},
+\oauthor{\bsnm{Tukey}, \binits{J.}}:
+Graphical display of data sets in three or more dimensions. Three papers in
+  Interpreting Multivariate Data (ed. V. Barnett), 189--275.
+Chichester: Wiley
+(1981)
+\end{botherref}
+\endbibitem
+
+%%% 21
+\bibitem{chen2018using}
+\begin{bchapter}
+\bauthor{\bsnm{Chen}, \binits{H.}},
+\bauthor{\bsnm{Engle}, \binits{S.}},
+\bauthor{\bsnm{Joshi}, \binits{A.}},
+\bauthor{\bsnm{Ragan}, \binits{E.D.}},
+\bauthor{\bsnm{Yuksel}, \binits{B.F.}},
+\bauthor{\bsnm{Harrison}, \binits{L.}}:
+\bctitle{Using animation to alleviate overdraw in multiclass scatterplot
+  matrices}.
+In: \bbtitle{Proceedings of the 2018 CHI Conference on Human Factors in
+  Computing Systems},
+p. \bfpage{417}
+(\byear{2018}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 22
+\bibitem{carr1987scatterplot}
+\begin{barticle}
+\bauthor{\bsnm{Carr}, \binits{D.B.}},
+\bauthor{\bsnm{Littlefield}, \binits{R.J.}},
+\bauthor{\bsnm{Nicholson}, \binits{W.}},
+\bauthor{\bsnm{Littlefield}, \binits{J.}}:
+\batitle{Scatterplot matrix techniques for large n}.
+\bjtitle{Journal of the American Statistical Association}
+\bvolume{82}(\bissue{398}),
+\bfpage{424}--\blpage{436}
+(\byear{1987})
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem{kerren2007human}
+\begin{bbook}
+\bauthor{\bsnm{Kerren}, \binits{A.}},
+\bauthor{\bsnm{Ebert}, \binits{A.}},
+\bauthor{\bsnm{Meyer}, \binits{J.}}:
+\bbtitle{Human-Centered Visualization Environments: GI-Dagstuhl Research
+  Seminar, Dagstuhl Castle, Germany, March 5-8, 2006, Revised Papers}
+vol. \bseriesno{4417}.
+\bpublisher{Springer}, \blocation{???}
+(\byear{2007})
+\end{bbook}
+\endbibitem
+
+%%% 24
+\bibitem{asimov1985grand}
+\begin{barticle}
+\bauthor{\bsnm{Asimov}, \binits{D.}}:
+\batitle{The grand tour: a tool for viewing multidimensional data}.
+\bjtitle{SIAM journal on scientific and statistical computing}
+\bvolume{6}(\bissue{1}),
+\bfpage{128}--\blpage{143}
+(\byear{1985})
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem{friedman1974projection}
+\begin{barticle}
+\bauthor{\bsnm{Friedman}, \binits{J.H.}},
+\bauthor{\bsnm{Tukey}, \binits{J.W.}}:
+\batitle{A projection pursuit algorithm for exploratory data analysis}.
+\bjtitle{IEEE Transactions on computers}
+\bvolume{100}(\bissue{9}),
+\bfpage{881}--\blpage{890}
+(\byear{1974})
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem{cook1995grand}
+\begin{barticle}
+\bauthor{\bsnm{Cook}, \binits{D.}},
+\bauthor{\bsnm{Buja}, \binits{A.}},
+\bauthor{\bsnm{Cabrera}, \binits{J.}},
+\bauthor{\bsnm{Hurley}, \binits{C.}}:
+\batitle{Grand tour and projection pursuit}.
+\bjtitle{Journal of Computational and Graphical Statistics}
+\bvolume{4}(\bissue{3}),
+\bfpage{155}--\blpage{172}
+(\byear{1995})
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem{wilkinson2005graph}
+\begin{bchapter}
+\bauthor{\bsnm{Wilkinson}, \binits{L.}},
+\bauthor{\bsnm{Anand}, \binits{A.}},
+\bauthor{\bsnm{Grossman}, \binits{R.}}:
+\bctitle{Graph-theoretic scagnostics}.
+In: \bbtitle{IEEE Symposium on Information Visualization, 2005. INFOVIS 2005.},
+pp. \bfpage{157}--\blpage{164}
+(\byear{2005}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 28
+\bibitem{li2011application}
+\begin{botherref}
+\oauthor{\bsnm{Li}, \binits{W.}}:
+Application of volcano plots in analyses of mrna differential expressions with
+  microarrays.
+arXiv preprint arXiv:1103.3434
+(2011)
+\end{botherref}
+\endbibitem
+
+%%% 29
+\bibitem{hochheiser2003dynamic}
+\begin{bchapter}
+\bauthor{\bsnm{Hochheiser}, \binits{H.}},
+\bauthor{\bsnm{Baehrecke}, \binits{E.H.}},
+\bauthor{\bsnm{Mount}, \binits{S.M.}},
+\bauthor{\bsnm{Shneiderman}, \binits{B.}}:
+\bctitle{Dynamic querying for pattern identification in microarray and genomic
+  data}.
+In: \bbtitle{2003 International Conference on Multimedia and Expo. ICME'03.
+  Proceedings (Cat. No. 03TH8698)},
+vol. \bseriesno{3},
+p. \bfpage{453}
+(\byear{2003}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 30
+\bibitem{harshbarger2017deiva}
+\begin{barticle}
+\bauthor{\bsnm{Harshbarger}, \binits{J.}},
+\bauthor{\bsnm{Kratz}, \binits{A.}},
+\bauthor{\bsnm{Carninci}, \binits{P.}}:
+\batitle{Deiva: a web application for interactive visual analysis of
+  differential gene expression profiles}.
+\bjtitle{BMC genomics}
+\bvolume{18}(\bissue{1}),
+\bfpage{47}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem{unwin2007computational}
+\begin{bbook}
+\bauthor{\bsnm{Unwin}, \binits{A.}},
+\bauthor{\bsnm{Chen}, \binits{C.-h.}},
+\bauthor{\bsnm{H{\"a}rdle}, \binits{W.}}:
+\bbtitle{Computational Statistics and Data Visualization}.
+\bpublisher{Humboldt-Universit{\"a}t zu Berlin, Wirtschaftswissenschaftliche
+  Fakult{\"a}t}, \blocation{???}
+(\byear{2007})
+\end{bbook}
+\endbibitem
+
+%%% 32
+\bibitem{yin2012ggbio}
+\begin{barticle}
+\bauthor{\bsnm{Yin}, \binits{T.}},
+\bauthor{\bsnm{Cook}, \binits{D.}},
+\bauthor{\bsnm{Lawrence}, \binits{M.}}:
+\batitle{ggbio: an r package for extending the grammar of graphics for genomic
+  data}.
+\bjtitle{Genome biology}
+\bvolume{13}(\bissue{8}),
+\bfpage{77}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem{andrienko2005blending}
+\begin{barticle}
+\bauthor{\bsnm{Andrienko}, \binits{G.}},
+\bauthor{\bsnm{Andrienko}, \binits{N.}}:
+\batitle{Blending aggregation and selection: Adapting parallel coordinates for
+  the visualization of large datasets}.
+\bjtitle{The Cartographic Journal}
+\bvolume{42}(\bissue{1}),
+\bfpage{49}--\blpage{60}
+(\byear{2005})
+\end{barticle}
+\endbibitem
+
+%%% 34
+\bibitem{nguyen2016deep}
+\begin{bchapter}
+\bauthor{\bsnm{Nguyen}, \binits{Q.V.}},
+\bauthor{\bsnm{Simoff}, \binits{S.}},
+\bauthor{\bsnm{Qian}, \binits{Y.}},
+\bauthor{\bsnm{Huang}, \binits{M.L.}}:
+\bctitle{Deep exploration of multidimensional data with linkable scatterplots}.
+In: \bbtitle{Proceedings of the 9th International Symposium on Visual
+  Information Communication and Interaction},
+pp. \bfpage{43}--\blpage{50}
+(\byear{2016}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 35
+\bibitem{albuquerque2009quality}
+\begin{bchapter}
+\bauthor{\bsnm{Albuquerque}, \binits{G.}},
+\bauthor{\bsnm{Eisemann}, \binits{M.}},
+\bauthor{\bsnm{Lehmann}, \binits{D.J.}},
+\bauthor{\bsnm{Theisel}, \binits{H.}},
+\bauthor{\bsnm{Magnor}, \binits{M.A.}}:
+\bctitle{Quality-based visualization matrices.}
+In: \bbtitle{VMV},
+pp. \bfpage{341}--\blpage{350}
+(\byear{2009})
+\end{bchapter}
+\endbibitem
+
+%%% 36
+\bibitem{heinrich2012parallel}
+\begin{botherref}
+\oauthor{\bsnm{Heinrich}, \binits{J.}},
+\oauthor{\bsnm{Stasko}, \binits{J.}},
+\oauthor{\bsnm{Weiskopf}, \binits{D.}}:
+The parallel coordinates matrix.
+EuroVis--Short Papers,
+37--41
+(2012)
+\end{botherref}
+\endbibitem
+
+%%% 37
+\bibitem{swayne2003ggobi}
+\begin{barticle}
+\bauthor{\bsnm{Swayne}, \binits{D.F.}},
+\bauthor{\bsnm{Lang}, \binits{D.T.}},
+\bauthor{\bsnm{Buja}, \binits{A.}},
+\bauthor{\bsnm{Cook}, \binits{D.}}:
+\batitle{Ggobi: evolving from xgobi into an extensible framework for
+  interactive data visualization}.
+\bjtitle{Computational Statistics \& Data Analysis}
+\bvolume{43}(\bissue{4}),
+\bfpage{423}--\blpage{444}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+%%% 38
+\bibitem{cook2007interactive}
+\begin{bbook}
+\bauthor{\bsnm{Cook}, \binits{D.}},
+\bauthor{\bsnm{Swayne}, \binits{D.F.}},
+\bauthor{\bsnm{Buja}, \binits{A.}}:
+\bbtitle{Interactive and Dynamic Graphics for Data Analysis: with R and GGobi}.
+\bpublisher{Springer}, \blocation{???}
+(\byear{2007})
+\end{bbook}
+\endbibitem
+
+%%% 39
+\bibitem{htmlwidgets}
+\begin{botherref}
+\oauthor{\bsnm{Vaidyanathan}, \binits{R.}},
+\oauthor{\bsnm{Xie}, \binits{Y.}},
+\oauthor{\bsnm{Allaire}, \binits{J.}},
+\oauthor{\bsnm{Cheng}, \binits{J.}},
+\oauthor{\bsnm{Russell}, \binits{K.}}:
+Htmlwidgets: HTML Widgets for R, 2016.
+\url{https://cran.r-project.org/package=htmlwidgets}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 40
+\bibitem{ggplot2}
+\begin{bbook}
+\bauthor{\bsnm{Wickham}, \binits{H.}}:
+\bbtitle{Ggplot2: Elegant Graphics for Data Analysis}.
+\bpublisher{Springer}, \blocation{???}
+(\byear{2016})
+\end{bbook}
+\endbibitem
+
+%%% 41
+\bibitem{shiny}
+\begin{botherref}
+\oauthor{\bsnm{Chang}, \binits{W.}},
+\oauthor{\bsnm{Cheng}, \binits{J.}},
+\oauthor{\bsnm{Allaire}, \binits{J.}},
+\oauthor{\bsnm{Xie}, \binits{Y.}},
+\oauthor{\bsnm{McPherson}, \binits{J.}}:
+Shiny: Web Application Framework for R [Computer Software].
+\url{https://cran.r-project.org/package=shiny}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 42
+\bibitem{rstudio}
+\begin{botherref}
+RStudio: Integrated Development for R.
+\url{http://www.rstudio.com}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 43
+\bibitem{plotly}
+\begin{botherref}
+\oauthor{\bsnm{Sievert}, \binits{C.}},
+\oauthor{\bsnm{Parmer}, \binits{C.}},
+\oauthor{\bsnm{Hocking}, \binits{T.}},
+\oauthor{\bsnm{Chamberlain}, \binits{S.}},
+\oauthor{\bsnm{Ram}, \binits{K.}},
+\oauthor{\bsnm{Corvellec}, \binits{M.}},
+\oauthor{\bsnm{Despouy}, \binits{P.}}:
+Plotly: Create Interactive Web Graphics Via 'plotly.js'.
+\url{https://cran.r-project.org/package=plotly}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 44
+\bibitem{pkgdown}
+\begin{botherref}
+\oauthor{\bsnm{Wickham}, \binits{H.}},
+\oauthor{\bsnm{Hesselberth}, \binits{J.}}:
+Pkgdown: Make Static HTML Documentation for a Package.
+\url{https://cran.r-project.org/package=pkgdown}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+\end{thebibliography}
+
+\newcommand{\BMCxmlcomment}[1]{}
+
+\BMCxmlcomment{
+
+<refgrp>
+
+<bibl id="B1">
+  <title><p>Visualizing biological data—now and in the future</p></title>
+  <aug>
+    <au><snm>O'Donoghue</snm><fnm>SI</fnm></au>
+    <au><snm>Gavin</snm><fnm>AC</fnm></au>
+    <au><snm>Gehlenborg</snm><fnm>N</fnm></au>
+    <au><snm>Goodsell</snm><fnm>DS</fnm></au>
+    <au><snm>H{\'e}rich{\'e}</snm><fnm>JK</fnm></au>
+    <au><snm>Nielsen</snm><fnm>CB</fnm></au>
+    <au><snm>North</snm><fnm>C</fnm></au>
+    <au><snm>Olson</snm><fnm>AJ</fnm></au>
+    <au><snm>Procter</snm><fnm>JB</fnm></au>
+    <au><snm>Shattuck</snm><fnm>DW</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Nature methods</source>
+  <pubdate>2010</pubdate>
+  <volume>7</volume>
+  <issue>3</issue>
+  <fpage>S2</fpage>
+</bibl>
+
+<bibl id="B2">
+  <title><p>Visualizing genome and systems biology: technologies, tools,
+  implementation techniques and trends, past, present and future</p></title>
+  <aug>
+    <au><snm>Pavlopoulos</snm><fnm>GA</fnm></au>
+    <au><snm>Malliarakis</snm><fnm>D</fnm></au>
+    <au><snm>Papanikolaou</snm><fnm>N</fnm></au>
+    <au><snm>Theodosiou</snm><fnm>T</fnm></au>
+    <au><snm>Enright</snm><fnm>AJ</fnm></au>
+    <au><snm>Iliopoulos</snm><fnm>I</fnm></au>
+  </aug>
+  <source>Gigascience</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2015</pubdate>
+  <volume>4</volume>
+  <issue>1</issue>
+  <fpage>38</fpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Interactively exploring hierarchical clustering results [gene
+  identification]</p></title>
+  <aug>
+    <au><snm>Seo</snm><fnm>J</fnm></au>
+    <au><snm>Shneiderman</snm><fnm>B</fnm></au>
+  </aug>
+  <source>Computer</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2002</pubdate>
+  <volume>35</volume>
+  <issue>7</issue>
+  <fpage>80</fpage>
+  <lpage>-86</lpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>Spotfire: an information exploration environment</p></title>
+  <aug>
+    <au><snm>Ahlberg</snm><fnm>C</fnm></au>
+  </aug>
+  <source>ACM SIGMOD Record</source>
+  <publisher>ACM</publisher>
+  <pubdate>1996</pubdate>
+  <volume>25</volume>
+  <issue>4</issue>
+  <fpage>25</fpage>
+  <lpage>-29</lpage>
+</bibl>
+
+<bibl id="B5">
+  <title><p>GeneSpringTM: tools for analyzing microarray expression
+  data</p></title>
+  <aug>
+    <au><snm>Chu</snm><fnm>L</fnm></au>
+    <au><snm>Scharf</snm><fnm>E</fnm></au>
+    <au><snm>Kondo</snm><fnm>T</fnm></au>
+  </aug>
+  <source>Genome Informatics</source>
+  <publisher>Japanese Society for Bioinformatics</publisher>
+  <pubdate>2001</pubdate>
+  <volume>12</volume>
+  <fpage>227</fpage>
+  <lpage>-229</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>Bioconductor: open software development for computational biology
+  and bioinformatics</p></title>
+  <aug>
+    <au><snm>Gentleman</snm><fnm>RC</fnm></au>
+    <au><snm>Carey</snm><fnm>VJ</fnm></au>
+    <au><snm>Bates</snm><fnm>DM</fnm></au>
+    <au><snm>Bolstad</snm><fnm>B</fnm></au>
+    <au><snm>Dettling</snm><fnm>M</fnm></au>
+    <au><snm>Dudoit</snm><fnm>S</fnm></au>
+    <au><snm>Ellis</snm><fnm>B</fnm></au>
+    <au><snm>Gautier</snm><fnm>L</fnm></au>
+    <au><snm>Ge</snm><fnm>Y</fnm></au>
+    <au><snm>Gentry</snm><fnm>J</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Genome biology</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2004</pubdate>
+  <volume>5</volume>
+  <issue>10</issue>
+  <fpage>R80</fpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>iSEE: Interactive SummarizedExperiment Explorer</p></title>
+  <aug>
+    <au><snm>Rue Albrecht</snm><fnm>K</fnm></au>
+    <au><snm>Marini</snm><fnm>F</fnm></au>
+    <au><snm>Soneson</snm><fnm>C</fnm></au>
+    <au><snm>Lun</snm><fnm>AT</fnm></au>
+  </aug>
+  <source>F1000Research</source>
+  <publisher>Faculty of 1000 Ltd</publisher>
+  <pubdate>2018</pubdate>
+  <volume>7</volume>
+</bibl>
+
+<bibl id="B8">
+  <title><p>WIlsON: Web-based Interactive Omics VisualizatioN</p></title>
+  <aug>
+    <au><snm>Schultheis</snm><fnm>H</fnm></au>
+    <au><snm>Kuenne</snm><fnm>C</fnm></au>
+    <au><snm>Preussner</snm><fnm>J</fnm></au>
+    <au><snm>Wiegandt</snm><fnm>R</fnm></au>
+    <au><snm>Fust</snm><fnm>A</fnm></au>
+    <au><snm>Bentsen</snm><fnm>M</fnm></au>
+    <au><snm>Looso</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2018</pubdate>
+  <volume>35</volume>
+  <issue>6</issue>
+  <fpage>1055</fpage>
+  <lpage>-1057</lpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>ExpressionDB: An open source platform for distributing genome-scale
+  datasets</p></title>
+  <aug>
+    <au><snm>Hughes</snm><fnm>LD</fnm></au>
+    <au><snm>Lewis</snm><fnm>SA</fnm></au>
+    <au><snm>Hughes</snm><fnm>ME</fnm></au>
+  </aug>
+  <source>PloS one</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2017</pubdate>
+  <volume>12</volume>
+  <issue>11</issue>
+  <fpage>e0187457</fpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Visualization methods for RNA-sequencing data analysis</p></title>
+  <aug>
+    <au><snm>Rutter</snm><fnm>L</fnm></au>
+    <au><snm>Moran Lauter</snm><fnm>AN</fnm></au>
+    <au><snm>Graham</snm><fnm>MA</fnm></au>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+  </aug>
+  <source>Submitted to BMC Bioinformatics</source>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Transcriptomic responses to diet quality and viral infection in
+  Apis mellifera</p></title>
+  <aug>
+    <au><snm>Rutter</snm><fnm>L</fnm></au>
+    <au><snm>Carrillo Tripp</snm><fnm>J</fnm></au>
+    <au><snm>Bonning</snm><fnm>BC</fnm></au>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+    <au><snm>Toth</snm><fnm>AL</fnm></au>
+    <au><snm>Dolezal</snm><fnm>AG</fnm></au>
+  </aug>
+  <source>Submitted to BMC Genomics</source>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Moderated estimation of fold change and dispersion for RNA-seq data
+  with DESeq2</p></title>
+  <aug>
+    <au><snm>Love</snm><fnm>MI</fnm></au>
+    <au><snm>Huber</snm><fnm>W</fnm></au>
+    <au><snm>Anders</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Genome biology</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2014</pubdate>
+  <volume>15</volume>
+  <issue>12</issue>
+  <fpage>550</fpage>
+</bibl>
+
+<bibl id="B13">
+  <title><p>edgeR: a Bioconductor package for differential expression analysis
+  of digital gene expression data</p></title>
+  <aug>
+    <au><snm>Robinson</snm><fnm>MD</fnm></au>
+    <au><snm>McCarthy</snm><fnm>DJ</fnm></au>
+    <au><snm>Smyth</snm><fnm>GK</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2010</pubdate>
+  <volume>26</volume>
+  <issue>1</issue>
+  <fpage>139</fpage>
+  <lpage>-140</lpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>limma powers differential expression analyses for RNA-sequencing
+  and microarray studies</p></title>
+  <aug>
+    <au><snm>Ritchie</snm><fnm>ME</fnm></au>
+    <au><snm>Phipson</snm><fnm>B</fnm></au>
+    <au><snm>Wu</snm><fnm>D</fnm></au>
+    <au><snm>Hu</snm><fnm>Y</fnm></au>
+    <au><snm>Law</snm><fnm>CW</fnm></au>
+    <au><snm>Shi</snm><fnm>W</fnm></au>
+    <au><snm>Smyth</snm><fnm>GK</fnm></au>
+  </aug>
+  <source>Nucleic acids research</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2015</pubdate>
+  <volume>43</volume>
+  <issue>7</issue>
+  <fpage>e47</fpage>
+  <lpage>-e47</lpage>
+</bibl>
+
+<bibl id="B15">
+  <title><p>EBSeq: an empirical Bayes hierarchical model for inference in
+  RNA-seq experiments</p></title>
+  <aug>
+    <au><snm>Leng</snm><fnm>N</fnm></au>
+    <au><snm>Dawson</snm><fnm>JA</fnm></au>
+    <au><snm>Thomson</snm><fnm>JA</fnm></au>
+    <au><snm>Ruotti</snm><fnm>V</fnm></au>
+    <au><snm>Rissman</snm><fnm>AI</fnm></au>
+    <au><snm>Smits</snm><fnm>BM</fnm></au>
+    <au><snm>Haag</snm><fnm>JD</fnm></au>
+    <au><snm>Gould</snm><fnm>MN</fnm></au>
+    <au><snm>Stewart</snm><fnm>RM</fnm></au>
+    <au><snm>Kendziorski</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2013</pubdate>
+  <volume>29</volume>
+  <issue>8</issue>
+  <fpage>1035</fpage>
+  <lpage>-1043</lpage>
+</bibl>
+
+<bibl id="B16">
+  <title><p>baySeq: empirical Bayesian methods for identifying differential
+  expression in sequence count data</p></title>
+  <aug>
+    <au><snm>Hardcastle</snm><fnm>TJ</fnm></au>
+    <au><snm>Kelly</snm><fnm>KA</fnm></au>
+  </aug>
+  <source>BMC bioinformatics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2010</pubdate>
+  <volume>11</volume>
+  <issue>1</issue>
+  <fpage>422</fpage>
+</bibl>
+
+<bibl id="B17">
+  <title><p>Brushing a scatterplot matrix: High-interaction graphical methods
+  for analyzing multidimensional data</p></title>
+  <aug>
+    <au><snm>Becker</snm><fnm>RA</fnm></au>
+    <au><snm>Cleveland</snm><fnm>WS</fnm></au>
+  </aug>
+  <source>submitted for publication</source>
+  <pubdate>1984</pubdate>
+</bibl>
+
+<bibl id="B18">
+  <title><p>Graphical interaction tools for multiple 2-and 3-dimensional
+  scatterplots</p></title>
+  <aug>
+    <au><snm>Carr</snm><fnm>DB</fnm></au>
+    <au><snm>Nicholson</snm><fnm>WL</fnm></au>
+  </aug>
+  <pubdate>1984</pubdate>
+</bibl>
+
+<bibl id="B19">
+  <title><p>The visual display of quantitative information</p></title>
+  <aug>
+    <au><snm>Tufte</snm><fnm>ER</fnm></au>
+  </aug>
+  <publisher>Graphics press Cheshire, CT</publisher>
+  <pubdate>2001</pubdate>
+  <volume>2</volume>
+</bibl>
+
+<bibl id="B20">
+  <title><p>Graphical display of data sets in three or more dimensions. Three
+  papers in Interpreting Multivariate Data (ed. V. Barnett),
+  189--275</p></title>
+  <aug>
+    <au><snm>Tukey</snm><fnm>PA</fnm></au>
+    <au><snm>Tukey</snm><fnm>JW</fnm></au>
+  </aug>
+  <publisher>Chichester: Wiley</publisher>
+  <pubdate>1981</pubdate>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Using animation to alleviate overdraw in multiclass scatterplot
+  matrices</p></title>
+  <aug>
+    <au><snm>Chen</snm><fnm>H</fnm></au>
+    <au><snm>Engle</snm><fnm>S</fnm></au>
+    <au><snm>Joshi</snm><fnm>A</fnm></au>
+    <au><snm>Ragan</snm><fnm>ED</fnm></au>
+    <au><snm>Yuksel</snm><fnm>BF</fnm></au>
+    <au><snm>Harrison</snm><fnm>L</fnm></au>
+  </aug>
+  <source>Proceedings of the 2018 CHI Conference on Human Factors in Computing
+  Systems</source>
+  <pubdate>2018</pubdate>
+  <fpage>417</fpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>Scatterplot matrix techniques for large N</p></title>
+  <aug>
+    <au><snm>Carr</snm><fnm>DB</fnm></au>
+    <au><snm>Littlefield</snm><fnm>RJ</fnm></au>
+    <au><snm>Nicholson</snm><fnm>WL</fnm></au>
+    <au><snm>Littlefield</snm><fnm>JS</fnm></au>
+  </aug>
+  <source>Journal of the American Statistical Association</source>
+  <publisher>Taylor \& Francis Group</publisher>
+  <pubdate>1987</pubdate>
+  <volume>82</volume>
+  <issue>398</issue>
+  <fpage>424</fpage>
+  <lpage>-436</lpage>
+</bibl>
+
+<bibl id="B23">
+  <title><p>Human-Centered Visualization Environments: GI-Dagstuhl Research
+  Seminar, Dagstuhl Castle, Germany, March 5-8, 2006, Revised
+  Papers</p></title>
+  <aug>
+    <au><snm>Kerren</snm><fnm>A</fnm></au>
+    <au><snm>Ebert</snm><fnm>A</fnm></au>
+    <au><snm>Meyer</snm><fnm>J</fnm></au>
+  </aug>
+  <publisher>Springer</publisher>
+  <pubdate>2007</pubdate>
+  <volume>4417</volume>
+</bibl>
+
+<bibl id="B24">
+  <title><p>The grand tour: a tool for viewing multidimensional
+  data</p></title>
+  <aug>
+    <au><snm>Asimov</snm><fnm>D</fnm></au>
+  </aug>
+  <source>SIAM journal on scientific and statistical computing</source>
+  <publisher>SIAM</publisher>
+  <pubdate>1985</pubdate>
+  <volume>6</volume>
+  <issue>1</issue>
+  <fpage>128</fpage>
+  <lpage>-143</lpage>
+</bibl>
+
+<bibl id="B25">
+  <title><p>A projection pursuit algorithm for exploratory data
+  analysis</p></title>
+  <aug>
+    <au><snm>Friedman</snm><fnm>JH</fnm></au>
+    <au><snm>Tukey</snm><fnm>JW</fnm></au>
+  </aug>
+  <source>IEEE Transactions on computers</source>
+  <publisher>IEEE</publisher>
+  <pubdate>1974</pubdate>
+  <volume>100</volume>
+  <issue>9</issue>
+  <fpage>881</fpage>
+  <lpage>-890</lpage>
+</bibl>
+
+<bibl id="B26">
+  <title><p>Grand tour and projection pursuit</p></title>
+  <aug>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+    <au><snm>Buja</snm><fnm>A</fnm></au>
+    <au><snm>Cabrera</snm><fnm>J</fnm></au>
+    <au><snm>Hurley</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Journal of Computational and Graphical Statistics</source>
+  <publisher>Taylor \& Francis Group</publisher>
+  <pubdate>1995</pubdate>
+  <volume>4</volume>
+  <issue>3</issue>
+  <fpage>155</fpage>
+  <lpage>-172</lpage>
+</bibl>
+
+<bibl id="B27">
+  <title><p>Graph-theoretic scagnostics</p></title>
+  <aug>
+    <au><snm>Wilkinson</snm><fnm>L</fnm></au>
+    <au><snm>Anand</snm><fnm>A</fnm></au>
+    <au><snm>Grossman</snm><fnm>R</fnm></au>
+  </aug>
+  <source>IEEE Symposium on Information Visualization, 2005. INFOVIS
+  2005.</source>
+  <pubdate>2005</pubdate>
+  <fpage>157</fpage>
+  <lpage>-164</lpage>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Application of volcano plots in analyses of mRNA differential
+  expressions with microarrays</p></title>
+  <aug>
+    <au><snm>Li</snm><fnm>W</fnm></au>
+  </aug>
+  <source>arXiv preprint arXiv:1103.3434</source>
+  <pubdate>2011</pubdate>
+</bibl>
+
+<bibl id="B29">
+  <title><p>Dynamic querying for pattern identification in microarray and
+  genomic data</p></title>
+  <aug>
+    <au><snm>Hochheiser</snm><fnm>H</fnm></au>
+    <au><snm>Baehrecke</snm><fnm>EH</fnm></au>
+    <au><snm>Mount</snm><fnm>SM</fnm></au>
+    <au><snm>Shneiderman</snm><fnm>B</fnm></au>
+  </aug>
+  <source>2003 International Conference on Multimedia and Expo. ICME'03.
+  Proceedings (Cat. No. 03TH8698)</source>
+  <pubdate>2003</pubdate>
+  <volume>3</volume>
+  <fpage>III</fpage>
+  <lpage>-453</lpage>
+</bibl>
+
+<bibl id="B30">
+  <title><p>DEIVA: a web application for interactive visual analysis of
+  differential gene expression profiles</p></title>
+  <aug>
+    <au><snm>Harshbarger</snm><fnm>J</fnm></au>
+    <au><snm>Kratz</snm><fnm>A</fnm></au>
+    <au><snm>Carninci</snm><fnm>P</fnm></au>
+  </aug>
+  <source>BMC genomics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2017</pubdate>
+  <volume>18</volume>
+  <issue>1</issue>
+  <fpage>47</fpage>
+</bibl>
+
+<bibl id="B31">
+  <title><p>Computational Statistics and Data Visualization</p></title>
+  <aug>
+    <au><snm>Unwin</snm><fnm>A</fnm></au>
+    <au><snm>Chen</snm><fnm>Ch</fnm></au>
+    <au><snm>H{\"a}rdle</snm><fnm>W</fnm></au>
+  </aug>
+  <publisher>Humboldt-Universit{\"a}t zu Berlin, Wirtschaftswissenschaftliche
+  Fakult{\"a}t</publisher>
+  <pubdate>2007</pubdate>
+</bibl>
+
+<bibl id="B32">
+  <title><p>ggbio: an R package for extending the grammar of graphics for
+  genomic data</p></title>
+  <aug>
+    <au><snm>Yin</snm><fnm>T</fnm></au>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+    <au><snm>Lawrence</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Genome biology</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2012</pubdate>
+  <volume>13</volume>
+  <issue>8</issue>
+  <fpage>R77</fpage>
+</bibl>
+
+<bibl id="B33">
+  <title><p>Blending aggregation and selection: Adapting parallel coordinates
+  for the visualization of large datasets</p></title>
+  <aug>
+    <au><snm>Andrienko</snm><fnm>G</fnm></au>
+    <au><snm>Andrienko</snm><fnm>N</fnm></au>
+  </aug>
+  <source>The Cartographic Journal</source>
+  <publisher>Taylor \& Francis</publisher>
+  <pubdate>2005</pubdate>
+  <volume>42</volume>
+  <issue>1</issue>
+  <fpage>49</fpage>
+  <lpage>-60</lpage>
+</bibl>
+
+<bibl id="B34">
+  <title><p>Deep exploration of multidimensional data with linkable
+  scatterplots</p></title>
+  <aug>
+    <au><snm>Nguyen</snm><fnm>QV</fnm></au>
+    <au><snm>Simoff</snm><fnm>S</fnm></au>
+    <au><snm>Qian</snm><fnm>Y</fnm></au>
+    <au><snm>Huang</snm><fnm>ML</fnm></au>
+  </aug>
+  <source>Proceedings of the 9th International Symposium on Visual Information
+  Communication and Interaction</source>
+  <pubdate>2016</pubdate>
+  <fpage>43</fpage>
+  <lpage>-50</lpage>
+</bibl>
+
+<bibl id="B35">
+  <title><p>Quality-based visualization matrices.</p></title>
+  <aug>
+    <au><snm>Albuquerque</snm><fnm>G</fnm></au>
+    <au><snm>Eisemann</snm><fnm>M</fnm></au>
+    <au><snm>Lehmann</snm><fnm>DJ</fnm></au>
+    <au><snm>Theisel</snm><fnm>H</fnm></au>
+    <au><snm>Magnor</snm><fnm>MA</fnm></au>
+  </aug>
+  <source>VMV</source>
+  <pubdate>2009</pubdate>
+  <fpage>341</fpage>
+  <lpage>-350</lpage>
+</bibl>
+
+<bibl id="B36">
+  <title><p>The parallel coordinates matrix</p></title>
+  <aug>
+    <au><snm>Heinrich</snm><fnm>J</fnm></au>
+    <au><snm>Stasko</snm><fnm>J</fnm></au>
+    <au><snm>Weiskopf</snm><fnm>D</fnm></au>
+  </aug>
+  <source>EuroVis--Short Papers</source>
+  <pubdate>2012</pubdate>
+  <fpage>37</fpage>
+  <lpage>-41</lpage>
+</bibl>
+
+<bibl id="B37">
+  <title><p>GGobi: evolving from XGobi into an extensible framework for
+  interactive data visualization</p></title>
+  <aug>
+    <au><snm>Swayne</snm><fnm>DF</fnm></au>
+    <au><snm>Lang</snm><fnm>DT</fnm></au>
+    <au><snm>Buja</snm><fnm>A</fnm></au>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+  </aug>
+  <source>Computational Statistics \& Data Analysis</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2003</pubdate>
+  <volume>43</volume>
+  <issue>4</issue>
+  <fpage>423</fpage>
+  <lpage>-444</lpage>
+</bibl>
+
+<bibl id="B38">
+  <title><p>Interactive and dynamic graphics for data analysis: with R and
+  GGobi</p></title>
+  <aug>
+    <au><snm>Cook</snm><fnm>D</fnm></au>
+    <au><snm>Swayne</snm><fnm>DF</fnm></au>
+    <au><snm>Buja</snm><fnm>A</fnm></au>
+  </aug>
+  <publisher>Springer Science \& Business Media</publisher>
+  <pubdate>2007</pubdate>
+</bibl>
+
+<bibl id="B39">
+  <title><p>htmlwidgets: HTML Widgets for R, 2016</p></title>
+  <aug>
+    <au><snm>Vaidyanathan</snm><fnm>R</fnm></au>
+    <au><snm>Xie</snm><fnm>Y</fnm></au>
+    <au><snm>Allaire</snm><fnm>JJ</fnm></au>
+    <au><snm>Cheng</snm><fnm>J</fnm></au>
+    <au><snm>Russell</snm><fnm>K</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=htmlwidgets</url>
+</bibl>
+
+<bibl id="B40">
+  <title><p>ggplot2: elegant graphics for data analysis</p></title>
+  <aug>
+    <au><snm>Wickham</snm><fnm>H</fnm></au>
+  </aug>
+  <publisher>Springer</publisher>
+  <pubdate>2016</pubdate>
+</bibl>
+
+<bibl id="B41">
+  <title><p>shiny: Web application framework for R [Computer
+  software]</p></title>
+  <aug>
+    <au><snm>Chang</snm><fnm>W</fnm></au>
+    <au><snm>Cheng</snm><fnm>J</fnm></au>
+    <au><snm>Allaire</snm><fnm>JJ</fnm></au>
+    <au><snm>Xie</snm><fnm>Y</fnm></au>
+    <au><snm>McPherson</snm><fnm>J</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=shiny</url>
+</bibl>
+
+<bibl id="B42">
+  <title><p>RStudio: integrated development for R</p></title>
+  <url>http://www.rstudio.com</url>
+</bibl>
+
+<bibl id="B43">
+  <title><p>plotly: Create Interactive Web Graphics via 'plotly.js'</p></title>
+  <aug>
+    <au><snm>Sievert</snm><fnm>C</fnm></au>
+    <au><snm>Parmer</snm><fnm>C</fnm></au>
+    <au><snm>Hocking</snm><fnm>T</fnm></au>
+    <au><snm>Chamberlain</snm><fnm>S</fnm></au>
+    <au><snm>Ram</snm><fnm>K</fnm></au>
+    <au><snm>Corvellec</snm><fnm>M</fnm></au>
+    <au><snm>Despouy</snm><fnm>P</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=plotly</url>
+</bibl>
+
+<bibl id="B44">
+  <title><p>pkgdown: Make static HTML documentation for a package</p></title>
+  <aug>
+    <au><snm>Wickham</snm><fnm>H</fnm></au>
+    <au><snm>Hesselberth</snm><fnm>J</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=pkgdown</url>
+</bibl>
+
+</refgrp>
+} % end of \BMCxmlcomment
