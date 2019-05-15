@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{44}
+\begin{thebibliography}{41}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -302,6 +302,50 @@ Submitted to BMC Genomics
 \endbibitem
 
 %%% 17
+\bibitem{htmlwidgets}
+\begin{botherref}
+\oauthor{\bsnm{Vaidyanathan}, \binits{R.}},
+\oauthor{\bsnm{Xie}, \binits{Y.}},
+\oauthor{\bsnm{Allaire}, \binits{J.}},
+\oauthor{\bsnm{Cheng}, \binits{J.}},
+\oauthor{\bsnm{Russell}, \binits{K.}}:
+Htmlwidgets: HTML Widgets for R, 2016.
+\url{https://cran.r-project.org/package=htmlwidgets}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 18
+\bibitem{plotly}
+\begin{botherref}
+\oauthor{\bsnm{Sievert}, \binits{C.}},
+\oauthor{\bsnm{Parmer}, \binits{C.}},
+\oauthor{\bsnm{Hocking}, \binits{T.}},
+\oauthor{\bsnm{Chamberlain}, \binits{S.}},
+\oauthor{\bsnm{Ram}, \binits{K.}},
+\oauthor{\bsnm{Corvellec}, \binits{M.}},
+\oauthor{\bsnm{Despouy}, \binits{P.}}:
+Plotly: Create Interactive Web Graphics Via 'plotly.js'.
+\url{https://cran.r-project.org/package=plotly}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 19
+\bibitem{shiny}
+\begin{botherref}
+\oauthor{\bsnm{Chang}, \binits{W.}},
+\oauthor{\bsnm{Cheng}, \binits{J.}},
+\oauthor{\bsnm{Allaire}, \binits{J.}},
+\oauthor{\bsnm{Xie}, \binits{Y.}},
+\oauthor{\bsnm{McPherson}, \binits{J.}}:
+Shiny: Web Application Framework for R [Computer Software].
+\url{https://cran.r-project.org/package=shiny}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 20
 \bibitem{becker1984brushing}
 \begin{botherref}
 \oauthor{\bsnm{Becker}, \binits{R.A.}},
@@ -313,7 +357,7 @@ submitted for publication
 \end{botherref}
 \endbibitem
 
-%%% 18
+%%% 21
 \bibitem{carr1984graphical}
 \begin{botherref}
 \oauthor{\bsnm{Carr}, \binits{D.}},
@@ -325,7 +369,7 @@ Pacific Northwest Lab., Richland, WA (USA)
 \end{botherref}
 \endbibitem
 
-%%% 19
+%%% 22
 \bibitem{tufte2001visual}
 \begin{bbook}
 \bauthor{\bsnm{Tufte}, \binits{E.R.}}:
@@ -336,7 +380,7 @@ vol. \bseriesno{2}.
 \end{bbook}
 \endbibitem
 
-%%% 20
+%%% 23
 \bibitem{tukey1981graphical}
 \begin{botherref}
 \oauthor{\bsnm{Tukey}, \binits{P.}},
@@ -348,7 +392,7 @@ Chichester: Wiley
 \end{botherref}
 \endbibitem
 
-%%% 21
+%%% 24
 \bibitem{chen2018using}
 \begin{bchapter}
 \bauthor{\bsnm{Chen}, \binits{H.}},
@@ -367,7 +411,7 @@ p. \bfpage{417}
 \end{bchapter}
 \endbibitem
 
-%%% 22
+%%% 25
 \bibitem{carr1987scatterplot}
 \begin{barticle}
 \bauthor{\bsnm{Carr}, \binits{D.B.}},
@@ -382,7 +426,7 @@ p. \bfpage{417}
 \end{barticle}
 \endbibitem
 
-%%% 23
+%%% 26
 \bibitem{kerren2007human}
 \begin{bbook}
 \bauthor{\bsnm{Kerren}, \binits{A.}},
@@ -396,7 +440,7 @@ vol. \bseriesno{4417}.
 \end{bbook}
 \endbibitem
 
-%%% 24
+%%% 27
 \bibitem{asimov1985grand}
 \begin{barticle}
 \bauthor{\bsnm{Asimov}, \binits{D.}}:
@@ -408,7 +452,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 25
+%%% 28
 \bibitem{friedman1974projection}
 \begin{barticle}
 \bauthor{\bsnm{Friedman}, \binits{J.H.}},
@@ -421,7 +465,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 29
 \bibitem{cook1995grand}
 \begin{barticle}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -436,7 +480,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 30
 \bibitem{wilkinson2005graph}
 \begin{bchapter}
 \bauthor{\bsnm{Wilkinson}, \binits{L.}},
@@ -450,7 +494,7 @@ pp. \bfpage{157}--\blpage{164}
 \end{bchapter}
 \endbibitem
 
-%%% 28
+%%% 31
 \bibitem{li2011application}
 \begin{botherref}
 \oauthor{\bsnm{Li}, \binits{W.}}:
@@ -461,7 +505,7 @@ arXiv preprint arXiv:1103.3434
 \end{botherref}
 \endbibitem
 
-%%% 29
+%%% 32
 \bibitem{hochheiser2003dynamic}
 \begin{bchapter}
 \bauthor{\bsnm{Hochheiser}, \binits{H.}},
@@ -479,7 +523,7 @@ p. \bfpage{453}
 \end{bchapter}
 \endbibitem
 
-%%% 30
+%%% 33
 \bibitem{harshbarger2017deiva}
 \begin{barticle}
 \bauthor{\bsnm{Harshbarger}, \binits{J.}},
@@ -494,7 +538,7 @@ p. \bfpage{453}
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 34
 \bibitem{unwin2007computational}
 \begin{bbook}
 \bauthor{\bsnm{Unwin}, \binits{A.}},
@@ -507,7 +551,7 @@ p. \bfpage{453}
 \end{bbook}
 \endbibitem
 
-%%% 32
+%%% 35
 \bibitem{yin2012ggbio}
 \begin{barticle}
 \bauthor{\bsnm{Yin}, \binits{T.}},
@@ -522,7 +566,7 @@ p. \bfpage{453}
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 36
 \bibitem{andrienko2005blending}
 \begin{barticle}
 \bauthor{\bsnm{Andrienko}, \binits{G.}},
@@ -534,50 +578,6 @@ p. \bfpage{453}
 \bfpage{49}--\blpage{60}
 (\byear{2005})
 \end{barticle}
-\endbibitem
-
-%%% 34
-\bibitem{nguyen2016deep}
-\begin{bchapter}
-\bauthor{\bsnm{Nguyen}, \binits{Q.V.}},
-\bauthor{\bsnm{Simoff}, \binits{S.}},
-\bauthor{\bsnm{Qian}, \binits{Y.}},
-\bauthor{\bsnm{Huang}, \binits{M.L.}}:
-\bctitle{Deep exploration of multidimensional data with linkable scatterplots}.
-In: \bbtitle{Proceedings of the 9th International Symposium on Visual
-  Information Communication and Interaction},
-pp. \bfpage{43}--\blpage{50}
-(\byear{2016}).
-\bcomment{ACM}
-\end{bchapter}
-\endbibitem
-
-%%% 35
-\bibitem{albuquerque2009quality}
-\begin{bchapter}
-\bauthor{\bsnm{Albuquerque}, \binits{G.}},
-\bauthor{\bsnm{Eisemann}, \binits{M.}},
-\bauthor{\bsnm{Lehmann}, \binits{D.J.}},
-\bauthor{\bsnm{Theisel}, \binits{H.}},
-\bauthor{\bsnm{Magnor}, \binits{M.A.}}:
-\bctitle{Quality-based visualization matrices.}
-In: \bbtitle{VMV},
-pp. \bfpage{341}--\blpage{350}
-(\byear{2009})
-\end{bchapter}
-\endbibitem
-
-%%% 36
-\bibitem{heinrich2012parallel}
-\begin{botherref}
-\oauthor{\bsnm{Heinrich}, \binits{J.}},
-\oauthor{\bsnm{Stasko}, \binits{J.}},
-\oauthor{\bsnm{Weiskopf}, \binits{D.}}:
-The parallel coordinates matrix.
-EuroVis--Short Papers,
-37--41
-(2012)
-\end{botherref}
 \endbibitem
 
 %%% 37
@@ -609,20 +609,6 @@ EuroVis--Short Papers,
 \endbibitem
 
 %%% 39
-\bibitem{htmlwidgets}
-\begin{botherref}
-\oauthor{\bsnm{Vaidyanathan}, \binits{R.}},
-\oauthor{\bsnm{Xie}, \binits{Y.}},
-\oauthor{\bsnm{Allaire}, \binits{J.}},
-\oauthor{\bsnm{Cheng}, \binits{J.}},
-\oauthor{\bsnm{Russell}, \binits{K.}}:
-Htmlwidgets: HTML Widgets for R, 2016.
-\url{https://cran.r-project.org/package=htmlwidgets}
-Accessed 2018-12-20
-\end{botherref}
-\endbibitem
-
-%%% 40
 \bibitem{ggplot2}
 \begin{bbook}
 \bauthor{\bsnm{Wickham}, \binits{H.}}:
@@ -632,21 +618,7 @@ Accessed 2018-12-20
 \end{bbook}
 \endbibitem
 
-%%% 41
-\bibitem{shiny}
-\begin{botherref}
-\oauthor{\bsnm{Chang}, \binits{W.}},
-\oauthor{\bsnm{Cheng}, \binits{J.}},
-\oauthor{\bsnm{Allaire}, \binits{J.}},
-\oauthor{\bsnm{Xie}, \binits{Y.}},
-\oauthor{\bsnm{McPherson}, \binits{J.}}:
-Shiny: Web Application Framework for R [Computer Software].
-\url{https://cran.r-project.org/package=shiny}
-Accessed 2018-12-20
-\end{botherref}
-\endbibitem
-
-%%% 42
+%%% 40
 \bibitem{rstudio}
 \begin{botherref}
 RStudio: Integrated Development for R.
@@ -655,23 +627,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 43
-\bibitem{plotly}
-\begin{botherref}
-\oauthor{\bsnm{Sievert}, \binits{C.}},
-\oauthor{\bsnm{Parmer}, \binits{C.}},
-\oauthor{\bsnm{Hocking}, \binits{T.}},
-\oauthor{\bsnm{Chamberlain}, \binits{S.}},
-\oauthor{\bsnm{Ram}, \binits{K.}},
-\oauthor{\bsnm{Corvellec}, \binits{M.}},
-\oauthor{\bsnm{Despouy}, \binits{P.}}:
-Plotly: Create Interactive Web Graphics Via 'plotly.js'.
-\url{https://cran.r-project.org/package=plotly}
-Accessed 2018-12-20
-\end{botherref}
-\endbibitem
-
-%%% 44
+%%% 41
 \bibitem{pkgdown}
 \begin{botherref}
 \oauthor{\bsnm{Wickham}, \binits{H.}},
@@ -970,6 +926,45 @@ Accessed 2018-12-20
 </bibl>
 
 <bibl id="B17">
+  <title><p>htmlwidgets: HTML Widgets for R, 2016</p></title>
+  <aug>
+    <au><snm>Vaidyanathan</snm><fnm>R</fnm></au>
+    <au><snm>Xie</snm><fnm>Y</fnm></au>
+    <au><snm>Allaire</snm><fnm>JJ</fnm></au>
+    <au><snm>Cheng</snm><fnm>J</fnm></au>
+    <au><snm>Russell</snm><fnm>K</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=htmlwidgets</url>
+</bibl>
+
+<bibl id="B18">
+  <title><p>plotly: Create Interactive Web Graphics via 'plotly.js'</p></title>
+  <aug>
+    <au><snm>Sievert</snm><fnm>C</fnm></au>
+    <au><snm>Parmer</snm><fnm>C</fnm></au>
+    <au><snm>Hocking</snm><fnm>T</fnm></au>
+    <au><snm>Chamberlain</snm><fnm>S</fnm></au>
+    <au><snm>Ram</snm><fnm>K</fnm></au>
+    <au><snm>Corvellec</snm><fnm>M</fnm></au>
+    <au><snm>Despouy</snm><fnm>P</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=plotly</url>
+</bibl>
+
+<bibl id="B19">
+  <title><p>shiny: Web application framework for R [Computer
+  software]</p></title>
+  <aug>
+    <au><snm>Chang</snm><fnm>W</fnm></au>
+    <au><snm>Cheng</snm><fnm>J</fnm></au>
+    <au><snm>Allaire</snm><fnm>JJ</fnm></au>
+    <au><snm>Xie</snm><fnm>Y</fnm></au>
+    <au><snm>McPherson</snm><fnm>J</fnm></au>
+  </aug>
+  <url>https://cran.r-project.org/package=shiny</url>
+</bibl>
+
+<bibl id="B20">
   <title><p>Brushing a scatterplot matrix: High-interaction graphical methods
   for analyzing multidimensional data</p></title>
   <aug>
@@ -980,7 +975,7 @@ Accessed 2018-12-20
   <pubdate>1984</pubdate>
 </bibl>
 
-<bibl id="B18">
+<bibl id="B21">
   <title><p>Graphical interaction tools for multiple 2-and 3-dimensional
   scatterplots</p></title>
   <aug>
@@ -990,7 +985,7 @@ Accessed 2018-12-20
   <pubdate>1984</pubdate>
 </bibl>
 
-<bibl id="B19">
+<bibl id="B22">
   <title><p>The visual display of quantitative information</p></title>
   <aug>
     <au><snm>Tufte</snm><fnm>ER</fnm></au>
@@ -1000,7 +995,7 @@ Accessed 2018-12-20
   <volume>2</volume>
 </bibl>
 
-<bibl id="B20">
+<bibl id="B23">
   <title><p>Graphical display of data sets in three or more dimensions. Three
   papers in Interpreting Multivariate Data (ed. V. Barnett),
   189--275</p></title>
@@ -1012,7 +1007,7 @@ Accessed 2018-12-20
   <pubdate>1981</pubdate>
 </bibl>
 
-<bibl id="B21">
+<bibl id="B24">
   <title><p>Using animation to alleviate overdraw in multiclass scatterplot
   matrices</p></title>
   <aug>
@@ -1029,7 +1024,7 @@ Accessed 2018-12-20
   <fpage>417</fpage>
 </bibl>
 
-<bibl id="B22">
+<bibl id="B25">
   <title><p>Scatterplot matrix techniques for large N</p></title>
   <aug>
     <au><snm>Carr</snm><fnm>DB</fnm></au>
@@ -1046,7 +1041,7 @@ Accessed 2018-12-20
   <lpage>-436</lpage>
 </bibl>
 
-<bibl id="B23">
+<bibl id="B26">
   <title><p>Human-Centered Visualization Environments: GI-Dagstuhl Research
   Seminar, Dagstuhl Castle, Germany, March 5-8, 2006, Revised
   Papers</p></title>
@@ -1060,7 +1055,7 @@ Accessed 2018-12-20
   <volume>4417</volume>
 </bibl>
 
-<bibl id="B24">
+<bibl id="B27">
   <title><p>The grand tour: a tool for viewing multidimensional
   data</p></title>
   <aug>
@@ -1075,7 +1070,7 @@ Accessed 2018-12-20
   <lpage>-143</lpage>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B28">
   <title><p>A projection pursuit algorithm for exploratory data
   analysis</p></title>
   <aug>
@@ -1091,7 +1086,7 @@ Accessed 2018-12-20
   <lpage>-890</lpage>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B29">
   <title><p>Grand tour and projection pursuit</p></title>
   <aug>
     <au><snm>Cook</snm><fnm>D</fnm></au>
@@ -1108,7 +1103,7 @@ Accessed 2018-12-20
   <lpage>-172</lpage>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B30">
   <title><p>Graph-theoretic scagnostics</p></title>
   <aug>
     <au><snm>Wilkinson</snm><fnm>L</fnm></au>
@@ -1122,7 +1117,7 @@ Accessed 2018-12-20
   <lpage>-164</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B31">
   <title><p>Application of volcano plots in analyses of mRNA differential
   expressions with microarrays</p></title>
   <aug>
@@ -1132,7 +1127,7 @@ Accessed 2018-12-20
   <pubdate>2011</pubdate>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B32">
   <title><p>Dynamic querying for pattern identification in microarray and
   genomic data</p></title>
   <aug>
@@ -1149,7 +1144,7 @@ Accessed 2018-12-20
   <lpage>-453</lpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B33">
   <title><p>DEIVA: a web application for interactive visual analysis of
   differential gene expression profiles</p></title>
   <aug>
@@ -1165,7 +1160,7 @@ Accessed 2018-12-20
   <fpage>47</fpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B34">
   <title><p>Computational Statistics and Data Visualization</p></title>
   <aug>
     <au><snm>Unwin</snm><fnm>A</fnm></au>
@@ -1177,7 +1172,7 @@ Accessed 2018-12-20
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B35">
   <title><p>ggbio: an R package for extending the grammar of graphics for
   genomic data</p></title>
   <aug>
@@ -1193,7 +1188,7 @@ Accessed 2018-12-20
   <fpage>R77</fpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B36">
   <title><p>Blending aggregation and selection: Adapting parallel coordinates
   for the visualization of large datasets</p></title>
   <aug>
@@ -1207,50 +1202,6 @@ Accessed 2018-12-20
   <issue>1</issue>
   <fpage>49</fpage>
   <lpage>-60</lpage>
-</bibl>
-
-<bibl id="B34">
-  <title><p>Deep exploration of multidimensional data with linkable
-  scatterplots</p></title>
-  <aug>
-    <au><snm>Nguyen</snm><fnm>QV</fnm></au>
-    <au><snm>Simoff</snm><fnm>S</fnm></au>
-    <au><snm>Qian</snm><fnm>Y</fnm></au>
-    <au><snm>Huang</snm><fnm>ML</fnm></au>
-  </aug>
-  <source>Proceedings of the 9th International Symposium on Visual Information
-  Communication and Interaction</source>
-  <pubdate>2016</pubdate>
-  <fpage>43</fpage>
-  <lpage>-50</lpage>
-</bibl>
-
-<bibl id="B35">
-  <title><p>Quality-based visualization matrices.</p></title>
-  <aug>
-    <au><snm>Albuquerque</snm><fnm>G</fnm></au>
-    <au><snm>Eisemann</snm><fnm>M</fnm></au>
-    <au><snm>Lehmann</snm><fnm>DJ</fnm></au>
-    <au><snm>Theisel</snm><fnm>H</fnm></au>
-    <au><snm>Magnor</snm><fnm>MA</fnm></au>
-  </aug>
-  <source>VMV</source>
-  <pubdate>2009</pubdate>
-  <fpage>341</fpage>
-  <lpage>-350</lpage>
-</bibl>
-
-<bibl id="B36">
-  <title><p>The parallel coordinates matrix</p></title>
-  <aug>
-    <au><snm>Heinrich</snm><fnm>J</fnm></au>
-    <au><snm>Stasko</snm><fnm>J</fnm></au>
-    <au><snm>Weiskopf</snm><fnm>D</fnm></au>
-  </aug>
-  <source>EuroVis--Short Papers</source>
-  <pubdate>2012</pubdate>
-  <fpage>37</fpage>
-  <lpage>-41</lpage>
 </bibl>
 
 <bibl id="B37">
@@ -1284,18 +1235,6 @@ Accessed 2018-12-20
 </bibl>
 
 <bibl id="B39">
-  <title><p>htmlwidgets: HTML Widgets for R, 2016</p></title>
-  <aug>
-    <au><snm>Vaidyanathan</snm><fnm>R</fnm></au>
-    <au><snm>Xie</snm><fnm>Y</fnm></au>
-    <au><snm>Allaire</snm><fnm>JJ</fnm></au>
-    <au><snm>Cheng</snm><fnm>J</fnm></au>
-    <au><snm>Russell</snm><fnm>K</fnm></au>
-  </aug>
-  <url>https://cran.r-project.org/package=htmlwidgets</url>
-</bibl>
-
-<bibl id="B40">
   <title><p>ggplot2: elegant graphics for data analysis</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
@@ -1304,39 +1243,12 @@ Accessed 2018-12-20
   <pubdate>2016</pubdate>
 </bibl>
 
-<bibl id="B41">
-  <title><p>shiny: Web application framework for R [Computer
-  software]</p></title>
-  <aug>
-    <au><snm>Chang</snm><fnm>W</fnm></au>
-    <au><snm>Cheng</snm><fnm>J</fnm></au>
-    <au><snm>Allaire</snm><fnm>JJ</fnm></au>
-    <au><snm>Xie</snm><fnm>Y</fnm></au>
-    <au><snm>McPherson</snm><fnm>J</fnm></au>
-  </aug>
-  <url>https://cran.r-project.org/package=shiny</url>
-</bibl>
-
-<bibl id="B42">
+<bibl id="B40">
   <title><p>RStudio: integrated development for R</p></title>
   <url>http://www.rstudio.com</url>
 </bibl>
 
-<bibl id="B43">
-  <title><p>plotly: Create Interactive Web Graphics via 'plotly.js'</p></title>
-  <aug>
-    <au><snm>Sievert</snm><fnm>C</fnm></au>
-    <au><snm>Parmer</snm><fnm>C</fnm></au>
-    <au><snm>Hocking</snm><fnm>T</fnm></au>
-    <au><snm>Chamberlain</snm><fnm>S</fnm></au>
-    <au><snm>Ram</snm><fnm>K</fnm></au>
-    <au><snm>Corvellec</snm><fnm>M</fnm></au>
-    <au><snm>Despouy</snm><fnm>P</fnm></au>
-  </aug>
-  <url>https://cran.r-project.org/package=plotly</url>
-</bibl>
-
-<bibl id="B44">
+<bibl id="B41">
   <title><p>pkgdown: Make static HTML documentation for a package</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
