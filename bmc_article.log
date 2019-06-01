@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 MAY 2019 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 JUN 2019 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,6 +119,61 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box32
 LaTeX Info: Redefining \\ on input line 3056.
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count100
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip47
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count101
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip48
+\skiplinenumber=\skip49
+\skiprule=\skip50
+\skiphlne=\skip51
+\skiptext=\skip52
+\skiplength=\skip53
+\algomargin=\skip54
+\skipalgocfslide=\skip55
+\algowidth=\dimen115
+\inoutsize=\dimen116
+\inoutindent=\dimen117
+\interspacetitleruled=\dimen118
+\interspacealgoruled=\dimen119
+\interspacetitleboxruled=\dimen120
+\algocf@ruledwidth=\skip56
+\algocf@inoutbox=\box33
+\algocf@inputbox=\box34
+\AlCapSkip=\skip57
+\AlCapHSkip=\skip58
+\algoskipindent=\skip59
+\algocf@nlbox=\box35
+\algocf@hangingbox=\box36
+\algocf@untilbox=\box37
+\algocf@skipuntil=\skip60
+\algocf@capbox=\box38
+\algocf@lcaptionbox=\skip61
+\algoheightruledefault=\skip62
+\algoheightrule=\skip63
+\algotitleheightruledefault=\skip64
+\algotitleheightrule=\skip65
+\c@algocfline=\count102
+\c@algocfproc=\count103
+\c@algocf=\count104
+\algocf@algoframe=\box39
+\algocf@algobox=\box40
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks19
@@ -126,8 +181,8 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen115
-\c@nlinenum=\count100
+\rotheadsize=\dimen121
+\c@nlinenum=\count105
 \TeXr@lab=\toks21
 )
 
@@ -137,31 +192,31 @@ LaTeX Warning: Unused global option(s):
 (./bmc_article.aux)
 \openout1 = `bmc_article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen116
-\scratchbox=\box33
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\scratchcounter=\count106
+\scratchdimen=\dimen122
+\scratchbox=\box41
+\nofMPsegments=\count107
+\nofMParguments=\count108
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen117
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen123
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -221,44 +276,44 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 92.
+(lastpage)             ! on input line 93.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 99.
+(Font)              size <12> substituted on input line 100.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
-(Font)              size <24.88> substituted on input line 107.
+(Font)              size <24.88> substituted on input line 108.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 127.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 128.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 128.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 128.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 128.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 127.
+(Font)              <11> on input line 128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 127.
+(Font)              <7.69997> on input line 128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 127.
+(Font)              <5.5> on input line 128.
 \address@aff1=\toks24
 \address@aff2=\toks25
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 167.
+(Font)              <7> on input line 168.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 167.
+(Font)              <5> on input line 168.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 258.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 259.
 
 
 
@@ -274,13 +329,13 @@ Underfull \vbox (badness 2197) has occurred while \output is active []
 
  [5]
 [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 330.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 331.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 331.
  [7] [8]
 (./bmc_article.bbl
 
@@ -289,9 +344,9 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 
 [9])
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 427.
+(Font)              <8> on input line 428.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 427.
+(Font)              <6> on input line 428.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -303,47 +358,52 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (20.30946pt too wide) in paragraph at lines 465--465
+Overfull \hbox (20.30946pt too wide) in paragraph at lines 466--466
 [][] 
  []
 
 
-Overfull \hbox (5.74623pt too wide) in paragraph at lines 468--468
+Overfull \hbox (5.74623pt too wide) in paragraph at lines 469--469
 []|[]| 
  []
 
 
-Overfull \hbox (20.30946pt too wide) in paragraph at lines 469--469
+Overfull \hbox (20.30946pt too wide) in paragraph at lines 470--470
 [][] 
  []
 
 
-Overfull \hbox (8.10736pt too wide) in paragraph at lines 470--471
+Overfull \hbox (8.10736pt too wide) in paragraph at lines 471--472
 []|[]| 
  []
 
 
-Overfull \hbox (5.74623pt too wide) in paragraph at lines 472--472
+Overfull \hbox (5.74623pt too wide) in paragraph at lines 473--473
 []|[]| 
  []
 
 
-Overfull \hbox (20.30946pt too wide) in paragraph at lines 473--473
+Overfull \hbox (20.30946pt too wide) in paragraph at lines 474--474
 [][] 
  []
 
 
-Overfull \hbox (8.10736pt too wide) in paragraph at lines 474--475
+Overfull \hbox (8.10736pt too wide) in paragraph at lines 475--476
 []|[]| 
  []
 
 
-Overfull \hbox (5.74623pt too wide) in paragraph at lines 476--476
+Overfull \hbox (5.74623pt too wide) in paragraph at lines 477--477
 []|[]| 
  []
 
 
-Overfull \hbox (38.54039pt too wide) in paragraph at lines 462--478
+Underfull \hbox (badness 2269) in paragraph at lines 477--477
+[]|\OT1/cmss/m/n/8 User uses Shiny but-tons to spec-ify
+ []
+
+
+Overfull \hbox (38.54039pt too wide) in paragraph at lines 463--479
  [] 
  []
 
@@ -351,43 +411,62 @@ Overfull \hbox (38.54039pt too wide) in paragraph at lines 462--478
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (32.74896pt too wide) in paragraph at lines 484--493
+Overfull \hbox (32.74896pt too wide) in paragraph at lines 485--494
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[10] [11]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 516
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 516.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 516.
+
 
 AED: lastpage setting LastPage
-[10] [11] (./bmc_article.aux)
+[12
+
+] (./bmc_article.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 3072 strings out of 492649
- 41864 string characters out of 6129622
- 139743 words of memory out of 5000000
- 6924 multiletter control sequences out of 15000+600000
- 11024 words of font info for 38 fonts, out of 8000000 for 9000
+ 4075 strings out of 492649
+ 57940 string characters out of 6129622
+ 165235 words of memory out of 5000000
+ 7906 multiletter control sequences out of 15000+600000
+ 11642 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,22n,40p,1566b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on bmc_article.pdf (11 pages, 159691 bytes).
+ 41i,22n,40p,1566b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on bmc_article.pdf (12 pages, 200737 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

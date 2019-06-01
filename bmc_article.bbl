@@ -204,16 +204,20 @@ Submitted to BMC Bioinformatics
 
 %%% 11
 \bibitem{rutter2}
-\begin{botherref}
-\oauthor{\bsnm{Rutter}, \binits{L.}},
-\oauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
-\oauthor{\bsnm{Bonning}, \binits{B.C.}},
-\oauthor{\bsnm{Cook}, \binits{D.}},
-\oauthor{\bsnm{Toth}, \binits{A.L.}},
-\oauthor{\bsnm{Dolezal}, \binits{A.G.}}:
-Transcriptomic responses to diet quality and viral infection in apis mellifera.
-Submitted to BMC Genomics
-\end{botherref}
+\begin{barticle}
+\bauthor{\bsnm{Rutter}, \binits{L.}},
+\bauthor{\bsnm{Carrillo-Tripp}, \binits{J.}},
+\bauthor{\bsnm{Bonning}, \binits{B.C.}},
+\bauthor{\bsnm{Cook}, \binits{D.}},
+\bauthor{\bsnm{Toth}, \binits{A.L.}},
+\bauthor{\bsnm{Dolezal}, \binits{A.G.}}:
+\batitle{Transcriptomic responses to diet quality and viral infection in apis
+  mellifera}.
+\bjtitle{BMC genomics}
+\bvolume{20}(\bissue{1}),
+\bfpage{412}
+(\byear{2019})
+\end{barticle}
 \endbibitem
 
 %%% 12
@@ -829,7 +833,12 @@ Accessed 2018-12-20
     <au><snm>Toth</snm><fnm>AL</fnm></au>
     <au><snm>Dolezal</snm><fnm>AG</fnm></au>
   </aug>
-  <source>Submitted to BMC Genomics</source>
+  <source>BMC genomics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2019</pubdate>
+  <volume>20</volume>
+  <issue>1</issue>
+  <fpage>412</fpage>
 </bibl>
 
 <bibl id="B12">
