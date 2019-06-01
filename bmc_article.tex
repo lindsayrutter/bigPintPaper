@@ -518,7 +518,7 @@ server $\leftarrow$ function(input, output, session)\{\;
 \Indp/* \textit{Declare Shiny output scatterplot matrix}\;
 output\$scatMatPlot $\leftarrow$ renderPlotly(\{\;
 \BlankLine
-\Indp\Indp/* Draw hexagons and x=y line in bottom-left corner of matrix\;
+\Indp/* Draw hexagons and x=y line in bottom-left corner of matrix\;
 my\_fn $\leftarrow$ function(data, mapping)\{\}\;
 \BlankLine
 /* \textit{Create static scatterplot matrix}\;
@@ -545,10 +545,10 @@ trace = \{mode: 'markers', color: 'orange', size: 6, text: selID, hoverinfo: 'te
 /* \textit{Superimpose traces onto the plotly scatterplot matrix object}\;
 Plotly.addTraces(el.id, Traces)\;
 \Indm\})\;
-\Indm\}\;
+\Indm\})\;
 \BlankLine
 /* \textit{Pass the R data object into the JavaScript function}\;
-", data = data)\;
+", data = data\;
 \Indm\})\;
 \BlankLine
 /* \textit{Read into Shiny the gene IDs that user clicked on}\;
@@ -575,13 +575,12 @@ trace = \{mode: 'lines', color: 'orange', width: 1.5, text: selID, hoverinfo: 't
 /* \textit{Push traces to be superimposed onto the plotly scatterplot matrix object}\;
 Plotly.addTraces(el.id, Traces)\;
 \BlankLine
-/* \textit{Pass R objects into the JavaScript function}\;
-\Indm\}", data = list(pcpDat = pcpDat())\;
-\Indm)\;
+\Indm/* \textit{Pass R objects into the JavaScript function}\;
+\}", data = list(pcpDat = pcpDat())\;
 \Indm\})\;
 \Indm\}\;
 
-\caption{Psuedocode for interactive scatterplot matrix}
+\caption{Pseudocode for interactive scatterplot matrix}
 \end{algorithm}
 
 
