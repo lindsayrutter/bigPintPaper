@@ -26,14 +26,14 @@ ggPR <- ggP %>% onRender("function(el, x, data) {
     
     # Determine which gene IDs are selected by the user click. Save as object called selID.
 
-    # Save selID object with a handle called 'selID' so it can be read outside this JavaScript function back in Shiny
+    # Save selID object with a handle called 'selID' so it can be read outside this JavaScript function back into R
     Shiny.onInputChange('selID', selID);
     
     # Create traces for selected gene IDs as orange points that state gene names upon hovering
     trace = {mode: 'markers', color: 'orange', size: 6, text: selID, hoverinfo: 'text'}
     
     # Push traces to be superimposed onto the plotly scatterplot matrix object
-    Plotly.addTraces(el.id, Traces);
+    Plotly.addTraces(el.id, trace);
     })}
     # Pass the R data object into the JavaScript function
     ", data = data)

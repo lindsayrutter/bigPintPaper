@@ -1,101 +1,73 @@
-ui <- shinydashboard::dashboardPage()
+ui <- dashboardPage()
 
 server <- function(input, output, session) {
     
     # User input options
-    shiny::observeEvent(input$goButton, values$x <- values$x + 1)
-    shiny::observeEvent(input$selPair, values$x <- 0)
-    shiny::observeEvent(input$selMetric, values$x <- 0)
-    shiny::observeEvent(input$selOrder, values$x <- 0)
-    shiny::observeEvent(input$binSize, values$x <- 0)
+    observeEvent(input$goButton, values$x <- values$x + 1)
+    observeEvent(input$selPair, values$x <- 0)
+    observeEvent(input$selMetric, values$x <- 0)
+    observeEvent(input$selOrder, values$x <- 0)
+    observeEvent(input$binSize, values$x <- 0)
     
     # Create reactive expression of plotly background litre plot
-    gP <- reactive({
-        p <- ggplot2::ggplot(hexdf)
-        gP <- plotly::ggplotly(p)
-    })
+    gP <- reactive({p <- ggplot(data); gP <- ggplotly(p)})
     
-    output$hexPlot <- plotly::renderPlotly({
+    # Declare shiny output litre plot
+    output$hexPlot <- renderPlotly({
+        # Create reactive expression of plotly background litre plot
         plotlyHex <- reactive(gP())
 
-        # Use this function to supplement the widget's built-in JavaScript rendering logic with additional custom JavaScript code, just for this specific widget object.
-        # Usage: onRender(x, jsCode, data = NULL)
-        # x - An HTML Widget object
-        # jsCode - Character vector containing JavaScript code (see Details)
-        # data - An additional argument to pass to the jsCode function. This can be any R object that can be serialized to JSON. If you have multiple objects to pass to the function, use a named list. This is the JavaScript equivalent of the R object passed into onRender as the data argument; this is an easy way to transfer e.g. data frames without having to manually do the JSON encoding. In this case, data is what the user passes in as the data frame of read counts.
-        plotlyHex() %>% onRender("
-         function(el, x, data) {
+        # Tailor interactivity of the plotly litre plot object using custom JavaScript
+        plotlyHex() %>% onRender("function(el, x, data) {
          
-         # 
+         # Read handle called 'points' to obtain variables sent from R into JavaScript 
          Shiny.addCustomMessageHandler('points', function(drawPoints) {
          
-         # JavaScript to delete any old Plotly traces (orange dots)
-         if (x.data.length > noPoint){
-         Plotly.deleteTraces(el.id, x.data.length-1);
-         }
-         var Traces = [];
-         var trace = {
-         x: drawPoints.geneX,
-         y: drawPoints.geneY,
-         mode: 'markers',
-         marker: {
-         color: drawPoints.pointColor,
-         size: drawPoints.pointSize
-         },
-         text: drawPoints.geneID,
-         hoverinfo: 'text',
-         showlegend: false
-         };
-         Traces.push(trace);
-         Plotly.addTraces(el.id, Traces);
+         # If present, delete old superimposed plotly geoms (dots)
+         if (x.data.length > 0){Plotly.deleteTraces(el.id)}
+         
+         # Create traces for selected gene ID as points that state gene names upon hovering
+    trace = {x: drawPoints.geneX, y: drawPoints.geneY, mode: 'markers', color: drawPoints.pointColor, size: drawPoints.pointSize, text: drawPoints.geneID, hoverinfo: 'text'}
+         
+         # Push traces to be superimposed onto the plotly litre plot object
+        Plotly.addTraces(el.id, trace);
          });}")
     })
     
+    # If the user changes the superimposed gene
     observe({
-        pointSize <- input$pointSize * 4
-        
-        # Send x and y values of selected row into onRender() function
+        # Save information about superimposed gene selected by user with a handle called 'point'. These values can then be sent from R to JavaScript.
         session$sendCustomMessage(type = "points", message=list(geneX=geneX, geneY=geneY, pointSize = pointSize, geneID=geneID, pointColor=pointColor))
     })
     
-    output$boxPlot <- plotly::renderPlotly({
+    # Declare shiny output boxplot
+    output$boxPlot <- renderPlotly({
 
-        BP <- reactive(ggplot2::ggplot() + geom_boxplot())
-        ggBP <- reactive(plotly::ggplotly(BP()))
+        # Create reactive expression of plotly background boxplot
+        BP <- reactive(ggplot() + geom_boxplot())
+        ggBP <- reactive(ggplotly(BP()))
         
+        # If the user changes the superimposed gene
         observe({
+            # Save information about superimposed gene selected by user with a handle called 'lines'. These values can then be sent from R to JavaScript.
             session$sendCustomMessage(type = "lines", message=list(geneInfo=currGene(), geneID=geneID, pointColor=pointColor))
         })
         
-        ggBP() %>% onRender("
-        function(el, x, data) {
+        # Tailor interactivity of the plotly boxplot object using custom JavaScript
+        ggBP() %>% onRender("function(el, x, data) {
         
-        noPoint = x.data.length;
+        # Read handle called 'lines' to obtain variables sent from R into JavaScript 
+        Shiny.addCustomMessageHandler('lines', function(drawLines) {
         
-        Shiny.addCustomMessageHandler('lines',
-        function(drawLines) {
+        # If present, delete old superimposed plotly geoms (lines)
+        Plotly.deleteTraces(el.id, traceLine);
+
+        # Create traces for selected gene ID as lines that state gene names upon hovering
+ 
+        var traceLine = {x: drawLines.geneInfo, y: drawLines.geneInfo, mode: 'lines', color: drawLines.pointColor, width: 2, opacity: 0.9, text: drawLines.geneID, hoverinfo: 'text'}}
         
-        Plotly.deleteTraces(el.id, (i-1));
-        
-        var dLength = drawLines.geneInfo.length
-        
-        var Traces = [];
-        var traceLine = {
-        x: range(1, dLength, 1),
-        y: drawLines.geneInfo,
-        mode: 'lines',
-        line: {
-        color: drawLines.pointColor,
-        width: 2
-        },
-        opacity: 0.9,
-        text: drawLines.geneID,
-        hoverinfo: 'text',
-        }
-        Traces.push(traceLine);
-        Plotly.addTraces(el.id, Traces);
+        # Push traces to be superimposed onto the plotly litre plot object
+        Plotly.addTraces(el.id, traceLine);
         })
         }")})
 }
-
-shiny::shinyApp(ui = ui, server = server)

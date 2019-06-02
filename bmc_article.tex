@@ -485,7 +485,7 @@ A) User selects the Box Select tool from the Plotly Modebar. B) User specifies b
       \begin{tabular}{llllll}
         \hline
         Plot & Figure & Explanation video & Interactive application & Pseudocode & Code\\ \hline
-        Scatterplot matrix & Figure~\ref{figureSM} & Link a1 & bit.ly/smplotApp & Figure a2 & Link a3\\
+        Scatterplot matrix & Figure~\ref{figureSM} & Link a1 & bit.ly/smplotApp & Algorithm~\ref{algorithmSM} & Link a3\\
         Litre plot & Figure~\ref{figureLitre} & Link b1 & bit.ly/litreApp & Figure b2 & Link b3\\
         Volcano plot & Figure~\ref{figureVolcano} & Link c1 & bit.ly/volcanoApp & Figure c2 & Link c3\\
         Parallel coordinate plot & Figure~\ref{figurePCP} & Link d1 & bit.ly/pcplotApp & Figure d2 & Link d3\\ \hline
@@ -585,6 +585,7 @@ Plotly.addTraces(el.id, Traces)\;
 }\})\;
 }\}\;
 \caption{Pseudocode for interactive scatterplot matrix}
+\label{algorithmSM}
 \end{algorithm}
 
 
@@ -593,7 +594,108 @@ Plotly.addTraces(el.id, Traces)\;
 
 
 
+\clearpage
 
+
+\begin{algorithm}[H]
+\SetInd{0.2em}{1.3em}
+
+\KwData{Data frame input by user}
+\KwResult{Interactive litre plot}
+
+/* \textit{Declare Shiny server}\;
+\SetKwBlock{Fna}{\textnormal{server $\leftarrow$ function(input, output, session)\{ }}{}
+\Fna{
+\BlankLine
+/* \textit{User input options}\;
+observeEvent(input\$goButton, values\$x $\leftarrow$ values\$x $+$ 1)\;
+observeEvent(input\$selPair, values\$x $\leftarrow$ 0)\;
+observeEvent(input\$selMetric, values\$x $\leftarrow$ 0)\;
+observeEvent(input\$selOrder, values\$x $\leftarrow$ 0)\;
+observeEvent(input\$binSize, values\$x $\leftarrow$ 0)\;
+\BlankLine
+/* \textit{Create reactive expression of plotly background litre plot}\;
+gP $\leftarrow$ reactive({p $\leftarrow$ ggplot(data); gP $\leftarrow$ ggplotly(p)})\;
+\BlankLine
+/* \textit{Declare shiny output litre plot}\;
+\SetKwBlock{Fnb}{\textnormal{output\$hexPlot $\leftarrow$ renderPlotly(\{ }}{}
+\Fnb{
+\BlankLine
+/* \textit{Create reactive expression of plotly background litre plot}\;
+plotlyHex $\leftarrow$ reactive(gP())\;
+\BlankLine
+/* \textit{Tailor interactivity of the plotly litre plot object using custom JavaScript}\;
+\SetKwBlock{Fnc}{\textnormal{plotlyHex() \%$>$\% onRender("function(el, x, data)\{ }}{}
+\Fnc{
+\BlankLine
+/* \textit{Read handle called 'points' to obtain variables sent from R into JavaScript}\;
+\SetKwBlock{Fnd}{\textnormal{Shiny.addCustomMessageHandler('points', function(drawPoints)\{ }}{}
+\Fnd{
+\BlankLine
+/* \textit{Delete any old superimposed plotly geoms (dots)}\;
+if (x.data.length $>$ 0)\{Plotly.deleteTraces(el.id)\}\;
+\BlankLine
+/* \textit{Create traces for selected gene IDs as points that state gene names upon hovering}\;
+trace = \{x: drawPoints.geneX, y: drawPoints.geneY, mode: 'markers', color: drawPoints.pointColor, size: drawPoints.pointSize, text: drawPoints.geneID, hoverinfo: 'text'\}\;
+\BlankLine
+/* \textit{Superimpose traces onto the plotly litre plot object}\;
+Plotly.addTraces(el.id, trace)\;
+
+}\})\; %Fnd
+}\}")\; %Fnc
+}\})\; %Fnb
+
+\BlankLine
+/* \textit{If the user changes the superimposed gene}\;
+\SetKwBlock{Fob}{\textnormal{observe(\{ }}{}
+\Fob{
+\BlankLine
+/* \textit{Save information about superimposed gene selected by user with a handle called 'point'. These values can then be sent from R to JavaScript}\;
+session\$sendCustomMessage(type = "points", message=list(geneX=geneX, geneY=geneY, pointSize = pointSize, geneID=geneID, pointColor=pointColor))\;
+}\})\; %Fob
+
+\BlankLine
+/* \textit{Declare Shiny output boxplot}\;
+\SetKwBlock{Fne}{\textnormal{output\$boxPlot $\leftarrow$ renderPlotly(\{ }}{}
+\Fne{
+\BlankLine
+/* \textit{Create reactive expression of plotly background boxplot}
+BP $\leftarrow$ reactive(ggplot() $+$ geom\_boxplot())
+ggBP $\leftarrow$ reactive(ggplotly(BP()))
+\BlankLine
+/* \textit{If the user changes the superimposed gene}\;
+\SetKwBlock{Fobs}{\textnormal{observe(\{ }}{}
+\Fobs{
+\BlankLine
+/* \textit{Save information about superimposed gene selected by user with a handle called 'lines'. These values can then be sent from R to JavaScript}\;
+session\$sendCustomMessage(type = "lines", message=list(geneInfo=currGene(), geneID=geneID, pointColor=pointColor))\;
+}\})\; %Fobs
+
+\BlankLine
+/* \textit{Tailor interactivity of the plotly boxplot object using custom JavaScript}\;
+\SetKwBlock{Fnf}{\textnormal{ggBP() \%$>$\% onRender("function(el, x, data)\{ }}{}
+\Fnf{
+\BlankLine
+/* \textit{Read handle called 'lines' to obtain variables sent from R into JavaScript}\;
+\SetKwBlock{Fng}{\textnormal{Shiny.addCustomMessageHandler('lines', function(drawLines)\{ }}{}
+\Fng{
+\BlankLine
+/* \textit{Delete any old superimposed plotly geoms (lines)}\;
+Plotly.deleteTraces(el.id, traceLine)\;
+\BlankLine
+/* \textit{Create traces for selected gene IDs as lines that state gene names upon hovering}\;
+traceLine = \{x: drawLines.geneInfo, y: drawLines.geneInfo, mode: 'lines', color: drawLines.pointColor, width: 2, opacity: 0.9; text: drawLines.geneID, hoverinfo: 'text'\}\;
+\BlankLine
+/* \textit{Superimpose traces onto the plotly litre plot object}\;
+Plotly.addTraces(el.id, traceLine)\;
+
+}\})\; %Fng
+}\})\; %Fnf
+}\})\; %Fne
+}\}\; %Fna
+
+\caption{Pseudocode for interactive litre plot}
+\end{algorithm}
 
 
 

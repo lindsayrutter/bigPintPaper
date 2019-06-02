@@ -18,7 +18,7 @@
 \SetKwBlock{Fnb}{\textnormal{output\$scatMatPlot $\leftarrow$ renderPlotly(\{ }}{}
 \Fnb{
 \BlankLine
-/* Draw hexagons and x=y line in bottom-left corner of matrix\;
+/* \textit{Draw hexagons and x=y line in bottom-left corner of matrix}\;
 my\_fn $\leftarrow$ function(data, mapping)\{\}\;
 \BlankLine
 /* \textit{Create static scatterplot matrix}\;
@@ -28,11 +28,11 @@ p $\leftarrow$ ggpairs(data, lower = list(continuous = my\_fn))\;
 ggP $\leftarrow$ ggplotly(p)\;
 \BlankLine
 /* \textit{Tailor plotly scatterplot matrix interactivity with JavaScript}\;
-\SetKwBlock{Fnc}{\textnormal{ggPR $\leftarrow$ ggP \%$>$\% onRender("function(el, x, data)\{ }}{}\;
+\SetKwBlock{Fnc}{\textnormal{ggPR $\leftarrow$ ggP \%$>$\% onRender("function(el, x, data)\{ }}{}
 \Fnc{
 \BlankLine
 /* \textit{If the user clicks on the plotly scatterplot matrix object}\;
-\SetKwBlock{Fnd}{\textnormal{el.on('plotly\_click', function(e)\{ }}{}\;
+\SetKwBlock{Fnd}{\textnormal{el.on('plotly\_click', function(e)\{ }}{}
 \Fnd{
 \BlankLine
 /* \textit{Delete any old superimposed plotly geoms (orange dots)}\;
@@ -66,7 +66,7 @@ BP $\leftarrow$ ggplot(data) $+$ geom\_boxplot()\;
 ggBP $\leftarrow$ ggplotly(BP)\;
 \BlankLine
 /* \textit{Declare Shiny output boxplot}\;
-\SetKwBlock{Fne}{\textnormal{output\$boxPlot $\leftarrow$ renderPlotly(\{ }}{}\;
+\SetKwBlock{Fne}{\textnormal{output\$boxPlot $\leftarrow$ renderPlotly(\{ }}{}
 \Fne{
 \BlankLine
 /* \textit{Tailor interactivity of the plotly boxplot object using custom JavaScript}\;
@@ -82,7 +82,7 @@ Plotly.addTraces(el.id, Traces)\;
 \}", data = list(pcpDat = pcpDat())\;
 }\})\;
 }\}\;
-
 \caption{Pseudocode for interactive scatterplot matrix}
+\label{algorithmSM}
 \end{algorithm}
 \end{document}
