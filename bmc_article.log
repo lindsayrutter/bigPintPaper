@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 JUN 2019 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 JUN 2019 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -432,11 +432,20 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 
 [12
 
-] 
-AED: lastpage setting LastPage
-[13
+] [13
 
-] (./bmc_article.aux)
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14
+
+]
+Overfull \vbox (61.90535pt too high) has occurred while \output is active []
+
+
+[15] 
+AED: lastpage setting LastPage
+(./bmc_article.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -446,10 +455,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4131 strings out of 492649
- 58791 string characters out of 6129622
- 171517 words of memory out of 5000000
- 7962 multiletter control sequences out of 15000+600000
+ 4132 strings out of 492649
+ 58807 string characters out of 6129622
+ 172384 words of memory out of 5000000
+ 7963 multiletter control sequences out of 15000+600000
  11642 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,22n,40p,1566b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -467,10 +476,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on bmc_article.pdf (13 pages, 211953 bytes).
+Output written on bmc_article.pdf (15 pages, 215897 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
