@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{41}
+\begin{thebibliography}{46}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -197,8 +197,8 @@ F1000Research
 \oauthor{\bsnm{Moran~Lauter}, \binits{A.N.}},
 \oauthor{\bsnm{Graham}, \binits{M.A.}},
 \oauthor{\bsnm{Cook}, \binits{D.}}:
-Visualization methods for rna-sequencing data analysis.
-Submitted to BMC Bioinformatics
+Visualization methods for differential expression analysis.
+Accepted to BMC Bioinformatics on June 24, 2019
 \end{botherref}
 \endbibitem
 
@@ -306,6 +306,19 @@ Submitted to BMC Bioinformatics
 \endbibitem
 
 %%% 17
+\bibitem{xie2014reactive}
+\begin{botherref}
+\oauthor{\bsnm{Xie}, \binits{Y.}},
+\oauthor{\bsnm{Hofmann}, \binits{H.}},
+\oauthor{\bsnm{Cheng}, \binits{X.}}:
+Reactive programming for interactive graphics.
+Statistical Science,
+201--213
+(2014)
+\end{botherref}
+\endbibitem
+
+%%% 18
 \bibitem{htmlwidgets}
 \begin{botherref}
 \oauthor{\bsnm{Vaidyanathan}, \binits{R.}},
@@ -319,7 +332,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 18
+%%% 19
 \bibitem{plotly}
 \begin{botherref}
 \oauthor{\bsnm{Sievert}, \binits{C.}},
@@ -335,7 +348,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 19
+%%% 20
 \bibitem{shiny}
 \begin{botherref}
 \oauthor{\bsnm{Chang}, \binits{W.}},
@@ -349,7 +362,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 20
+%%% 21
 \bibitem{becker1984brushing}
 \begin{botherref}
 \oauthor{\bsnm{Becker}, \binits{R.A.}},
@@ -361,7 +374,7 @@ submitted for publication
 \end{botherref}
 \endbibitem
 
-%%% 21
+%%% 22
 \bibitem{carr1984graphical}
 \begin{botherref}
 \oauthor{\bsnm{Carr}, \binits{D.}},
@@ -373,18 +386,18 @@ Pacific Northwest Lab., Richland, WA (USA)
 \end{botherref}
 \endbibitem
 
-%%% 22
+%%% 23
 \bibitem{tufte2001visual}
 \begin{bbook}
 \bauthor{\bsnm{Tufte}, \binits{E.R.}}:
-\bbtitle{The Visual Display of Quantitative Information}
-vol. \bseriesno{2}.
-\bpublisher{Graphics press Cheshire, CT}, \blocation{???}
+\bbtitle{The Visual Display of Quantitative Information}.
+\bpublisher{Graphics press},
+\blocation{Cheshire, CT}
 (\byear{2001})
 \end{bbook}
 \endbibitem
 
-%%% 23
+%%% 24
 \bibitem{tukey1981graphical}
 \begin{botherref}
 \oauthor{\bsnm{Tukey}, \binits{P.}},
@@ -396,7 +409,7 @@ Chichester: Wiley
 \end{botherref}
 \endbibitem
 
-%%% 24
+%%% 25
 \bibitem{chen2018using}
 \begin{bchapter}
 \bauthor{\bsnm{Chen}, \binits{H.}},
@@ -415,7 +428,7 @@ p. \bfpage{417}
 \end{bchapter}
 \endbibitem
 
-%%% 25
+%%% 26
 \bibitem{carr1987scatterplot}
 \begin{barticle}
 \bauthor{\bsnm{Carr}, \binits{D.B.}},
@@ -430,21 +443,21 @@ p. \bfpage{417}
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 27
 \bibitem{kerren2007human}
 \begin{bbook}
 \bauthor{\bsnm{Kerren}, \binits{A.}},
 \bauthor{\bsnm{Ebert}, \binits{A.}},
 \bauthor{\bsnm{Meyer}, \binits{J.}}:
 \bbtitle{Human-Centered Visualization Environments: GI-Dagstuhl Research
-  Seminar, Dagstuhl Castle, Germany, March 5-8, 2006, Revised Papers}
-vol. \bseriesno{4417}.
-\bpublisher{Springer}, \blocation{???}
+  Seminar, Dagstuhl Castle, Germany, March 5-8, 2006, Revised Papers}.
+\bpublisher{Springer},
+\blocation{Dagstuhl Castle, Germany}
 (\byear{2007})
 \end{bbook}
 \endbibitem
 
-%%% 27
+%%% 28
 \bibitem{asimov1985grand}
 \begin{barticle}
 \bauthor{\bsnm{Asimov}, \binits{D.}}:
@@ -456,7 +469,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 29
 \bibitem{friedman1974projection}
 \begin{barticle}
 \bauthor{\bsnm{Friedman}, \binits{J.H.}},
@@ -469,7 +482,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 30
 \bibitem{cook1995grand}
 \begin{barticle}
 \bauthor{\bsnm{Cook}, \binits{D.}},
@@ -484,7 +497,7 @@ vol. \bseriesno{4417}.
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 31
 \bibitem{wilkinson2005graph}
 \begin{bchapter}
 \bauthor{\bsnm{Wilkinson}, \binits{L.}},
@@ -498,7 +511,7 @@ pp. \bfpage{157}--\blpage{164}
 \end{bchapter}
 \endbibitem
 
-%%% 31
+%%% 32
 \bibitem{li2011application}
 \begin{botherref}
 \oauthor{\bsnm{Li}, \binits{W.}}:
@@ -509,7 +522,7 @@ arXiv preprint arXiv:1103.3434
 \end{botherref}
 \endbibitem
 
-%%% 32
+%%% 33
 \bibitem{hochheiser2003dynamic}
 \begin{bchapter}
 \bauthor{\bsnm{Hochheiser}, \binits{H.}},
@@ -527,7 +540,7 @@ p. \bfpage{453}
 \end{bchapter}
 \endbibitem
 
-%%% 33
+%%% 34
 \bibitem{harshbarger2017deiva}
 \begin{barticle}
 \bauthor{\bsnm{Harshbarger}, \binits{J.}},
@@ -542,7 +555,7 @@ p. \bfpage{453}
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 35
 \bibitem{unwin2007computational}
 \begin{bbook}
 \bauthor{\bsnm{Unwin}, \binits{A.}},
@@ -550,12 +563,13 @@ p. \bfpage{453}
 \bauthor{\bsnm{H{\"a}rdle}, \binits{W.}}:
 \bbtitle{Computational Statistics and Data Visualization}.
 \bpublisher{Humboldt-Universit{\"a}t zu Berlin, Wirtschaftswissenschaftliche
-  Fakult{\"a}t}, \blocation{???}
+  Fakult{\"a}t},
+\blocation{Berlin}
 (\byear{2007})
 \end{bbook}
 \endbibitem
 
-%%% 35
+%%% 36
 \bibitem{yin2012ggbio}
 \begin{barticle}
 \bauthor{\bsnm{Yin}, \binits{T.}},
@@ -570,7 +584,7 @@ p. \bfpage{453}
 \end{barticle}
 \endbibitem
 
-%%% 36
+%%% 37
 \bibitem{andrienko2005blending}
 \begin{barticle}
 \bauthor{\bsnm{Andrienko}, \binits{G.}},
@@ -584,7 +598,7 @@ p. \bfpage{453}
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 38
 \bibitem{swayne2003ggobi}
 \begin{barticle}
 \bauthor{\bsnm{Swayne}, \binits{D.F.}},
@@ -600,29 +614,31 @@ p. \bfpage{453}
 \end{barticle}
 \endbibitem
 
-%%% 38
+%%% 39
 \bibitem{cook2007interactive}
 \begin{bbook}
 \bauthor{\bsnm{Cook}, \binits{D.}},
 \bauthor{\bsnm{Swayne}, \binits{D.F.}},
 \bauthor{\bsnm{Buja}, \binits{A.}}:
 \bbtitle{Interactive and Dynamic Graphics for Data Analysis: with R and GGobi}.
-\bpublisher{Springer}, \blocation{???}
+\bpublisher{Springer},
+\blocation{New York}
 (\byear{2007})
 \end{bbook}
 \endbibitem
 
-%%% 39
+%%% 40
 \bibitem{ggplot2}
 \begin{bbook}
 \bauthor{\bsnm{Wickham}, \binits{H.}}:
 \bbtitle{Ggplot2: Elegant Graphics for Data Analysis}.
-\bpublisher{Springer}, \blocation{???}
+\bpublisher{Springer},
+\blocation{Switzerland}
 (\byear{2016})
 \end{bbook}
 \endbibitem
 
-%%% 40
+%%% 41
 \bibitem{rstudio}
 \begin{botherref}
 RStudio: Integrated Development for R.
@@ -631,7 +647,7 @@ Accessed 2018-12-20
 \end{botherref}
 \endbibitem
 
-%%% 41
+%%% 42
 \bibitem{pkgdown}
 \begin{botherref}
 \oauthor{\bsnm{Wickham}, \binits{H.}},
@@ -640,6 +656,61 @@ Pkgdown: Make Static HTML Documentation for a Package.
 \url{https://cran.r-project.org/package=pkgdown}
 Accessed 2018-12-20
 \end{botherref}
+\endbibitem
+
+%%% 43
+\bibitem{Marioni}
+\begin{botherref}
+\oauthor{\bsnm{Marioni}, \binits{J.C.}},
+\oauthor{\bsnm{Mason}, \binits{C.E.}},
+\oauthor{\bsnm{Mane}, \binits{S.M.}},
+\oauthor{\bsnm{Stephens}, \binits{M.}},
+\oauthor{\bsnm{Gilad}, \binits{Y.}}:
+Rna-seq: an assessment of technical reproducibility and comparison with gene
+  expression arrays.
+Genome research
+(2008)
+\end{botherref}
+\endbibitem
+
+%%% 44
+\bibitem{Lauter16}
+\begin{botherref}
+\oauthor{\bsnm{Moran~Lauter}, \binits{A.N.}},
+\oauthor{\bsnm{Graham}, \binits{M.A.}}:
+NCBI SRA Bioproject Accession: PRJNA318409.
+\url{https://www.ncbi.nlm.nih.gov/bioproject/PRJNA318409}
+Accessed 2018-12-20
+\end{botherref}
+\endbibitem
+
+%%% 45
+\bibitem{Risso}
+\begin{barticle}
+\bauthor{\bsnm{Risso}, \binits{D.}},
+\bauthor{\bsnm{Schwartz}, \binits{K.}},
+\bauthor{\bsnm{Sherlock}, \binits{G.}},
+\bauthor{\bsnm{Dudoit}, \binits{S.}}:
+\batitle{Gc-content normalization for rna-seq data}.
+\bjtitle{BMC bioinformatics}
+\bvolume{12}(\bissue{1}),
+\bfpage{480}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 46
+\bibitem{Brown}
+\begin{barticle}
+\bauthor{\bsnm{Brown}, \binits{A.V.}},
+\bauthor{\bsnm{Hudson}, \binits{K.A.}}:
+\batitle{Developmental profiling of gene expression in soybean trifoliate
+  leaves and cotyledons}.
+\bjtitle{BMC plant biology}
+\bvolume{15}(\bissue{1}),
+\bfpage{169}
+(\byear{2015})
+\end{barticle}
 \endbibitem
 
 \end{thebibliography}
@@ -812,14 +883,15 @@ Accessed 2018-12-20
 </bibl>
 
 <bibl id="B10">
-  <title><p>Visualization methods for RNA-sequencing data analysis</p></title>
+  <title><p>Visualization methods for differential expression
+  analysis</p></title>
   <aug>
     <au><snm>Rutter</snm><fnm>L</fnm></au>
     <au><snm>Moran Lauter</snm><fnm>AN</fnm></au>
     <au><snm>Graham</snm><fnm>MA</fnm></au>
     <au><snm>Cook</snm><fnm>D</fnm></au>
   </aug>
-  <source>Submitted to BMC Bioinformatics</source>
+  <source>Accepted to BMC Bioinformatics on June 24, 2019</source>
 </bibl>
 
 <bibl id="B11">
@@ -935,6 +1007,20 @@ Accessed 2018-12-20
 </bibl>
 
 <bibl id="B17">
+  <title><p>Reactive programming for interactive graphics</p></title>
+  <aug>
+    <au><snm>Xie</snm><fnm>Y</fnm></au>
+    <au><snm>Hofmann</snm><fnm>H</fnm></au>
+    <au><snm>Cheng</snm><fnm>X</fnm></au>
+  </aug>
+  <source>Statistical Science</source>
+  <publisher>JSTOR</publisher>
+  <pubdate>2014</pubdate>
+  <fpage>201</fpage>
+  <lpage>-213</lpage>
+</bibl>
+
+<bibl id="B18">
   <title><p>htmlwidgets: HTML Widgets for R, 2016</p></title>
   <aug>
     <au><snm>Vaidyanathan</snm><fnm>R</fnm></au>
@@ -946,7 +1032,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=htmlwidgets</url>
 </bibl>
 
-<bibl id="B18">
+<bibl id="B19">
   <title><p>plotly: Create Interactive Web Graphics via 'plotly.js'</p></title>
   <aug>
     <au><snm>Sievert</snm><fnm>C</fnm></au>
@@ -960,7 +1046,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=plotly</url>
 </bibl>
 
-<bibl id="B19">
+<bibl id="B20">
   <title><p>shiny: Web application framework for R [Computer
   software]</p></title>
   <aug>
@@ -973,7 +1059,7 @@ Accessed 2018-12-20
   <url>https://cran.r-project.org/package=shiny</url>
 </bibl>
 
-<bibl id="B20">
+<bibl id="B21">
   <title><p>Brushing a scatterplot matrix: High-interaction graphical methods
   for analyzing multidimensional data</p></title>
   <aug>
@@ -984,7 +1070,7 @@ Accessed 2018-12-20
   <pubdate>1984</pubdate>
 </bibl>
 
-<bibl id="B21">
+<bibl id="B22">
   <title><p>Graphical interaction tools for multiple 2-and 3-dimensional
   scatterplots</p></title>
   <aug>
@@ -994,17 +1080,16 @@ Accessed 2018-12-20
   <pubdate>1984</pubdate>
 </bibl>
 
-<bibl id="B22">
+<bibl id="B23">
   <title><p>The visual display of quantitative information</p></title>
   <aug>
     <au><snm>Tufte</snm><fnm>ER</fnm></au>
   </aug>
-  <publisher>Graphics press Cheshire, CT</publisher>
+  <publisher>Cheshire, CT: Graphics press</publisher>
   <pubdate>2001</pubdate>
-  <volume>2</volume>
 </bibl>
 
-<bibl id="B23">
+<bibl id="B24">
   <title><p>Graphical display of data sets in three or more dimensions. Three
   papers in Interpreting Multivariate Data (ed. V. Barnett),
   189--275</p></title>
@@ -1016,7 +1101,7 @@ Accessed 2018-12-20
   <pubdate>1981</pubdate>
 </bibl>
 
-<bibl id="B24">
+<bibl id="B25">
   <title><p>Using animation to alleviate overdraw in multiclass scatterplot
   matrices</p></title>
   <aug>
@@ -1033,7 +1118,7 @@ Accessed 2018-12-20
   <fpage>417</fpage>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B26">
   <title><p>Scatterplot matrix techniques for large N</p></title>
   <aug>
     <au><snm>Carr</snm><fnm>DB</fnm></au>
@@ -1050,7 +1135,7 @@ Accessed 2018-12-20
   <lpage>-436</lpage>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B27">
   <title><p>Human-Centered Visualization Environments: GI-Dagstuhl Research
   Seminar, Dagstuhl Castle, Germany, March 5-8, 2006, Revised
   Papers</p></title>
@@ -1059,12 +1144,11 @@ Accessed 2018-12-20
     <au><snm>Ebert</snm><fnm>A</fnm></au>
     <au><snm>Meyer</snm><fnm>J</fnm></au>
   </aug>
-  <publisher>Springer</publisher>
+  <publisher>Dagstuhl Castle, Germany: Springer</publisher>
   <pubdate>2007</pubdate>
-  <volume>4417</volume>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B28">
   <title><p>The grand tour: a tool for viewing multidimensional
   data</p></title>
   <aug>
@@ -1079,7 +1163,7 @@ Accessed 2018-12-20
   <lpage>-143</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B29">
   <title><p>A projection pursuit algorithm for exploratory data
   analysis</p></title>
   <aug>
@@ -1095,7 +1179,7 @@ Accessed 2018-12-20
   <lpage>-890</lpage>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B30">
   <title><p>Grand tour and projection pursuit</p></title>
   <aug>
     <au><snm>Cook</snm><fnm>D</fnm></au>
@@ -1112,7 +1196,7 @@ Accessed 2018-12-20
   <lpage>-172</lpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B31">
   <title><p>Graph-theoretic scagnostics</p></title>
   <aug>
     <au><snm>Wilkinson</snm><fnm>L</fnm></au>
@@ -1126,7 +1210,7 @@ Accessed 2018-12-20
   <lpage>-164</lpage>
 </bibl>
 
-<bibl id="B31">
+<bibl id="B32">
   <title><p>Application of volcano plots in analyses of mRNA differential
   expressions with microarrays</p></title>
   <aug>
@@ -1136,7 +1220,7 @@ Accessed 2018-12-20
   <pubdate>2011</pubdate>
 </bibl>
 
-<bibl id="B32">
+<bibl id="B33">
   <title><p>Dynamic querying for pattern identification in microarray and
   genomic data</p></title>
   <aug>
@@ -1153,7 +1237,7 @@ Accessed 2018-12-20
   <lpage>-453</lpage>
 </bibl>
 
-<bibl id="B33">
+<bibl id="B34">
   <title><p>DEIVA: a web application for interactive visual analysis of
   differential gene expression profiles</p></title>
   <aug>
@@ -1169,19 +1253,19 @@ Accessed 2018-12-20
   <fpage>47</fpage>
 </bibl>
 
-<bibl id="B34">
+<bibl id="B35">
   <title><p>Computational Statistics and Data Visualization</p></title>
   <aug>
     <au><snm>Unwin</snm><fnm>A</fnm></au>
     <au><snm>Chen</snm><fnm>Ch</fnm></au>
     <au><snm>H{\"a}rdle</snm><fnm>W</fnm></au>
   </aug>
-  <publisher>Humboldt-Universit{\"a}t zu Berlin, Wirtschaftswissenschaftliche
-  Fakult{\"a}t</publisher>
+  <publisher>Berlin: Humboldt-Universit{\"a}t zu Berlin,
+  Wirtschaftswissenschaftliche Fakult{\"a}t</publisher>
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B35">
+<bibl id="B36">
   <title><p>ggbio: an R package for extending the grammar of graphics for
   genomic data</p></title>
   <aug>
@@ -1197,7 +1281,7 @@ Accessed 2018-12-20
   <fpage>R77</fpage>
 </bibl>
 
-<bibl id="B36">
+<bibl id="B37">
   <title><p>Blending aggregation and selection: Adapting parallel coordinates
   for the visualization of large datasets</p></title>
   <aug>
@@ -1213,7 +1297,7 @@ Accessed 2018-12-20
   <lpage>-60</lpage>
 </bibl>
 
-<bibl id="B37">
+<bibl id="B38">
   <title><p>GGobi: evolving from XGobi into an extensible framework for
   interactive data visualization</p></title>
   <aug>
@@ -1231,7 +1315,7 @@ Accessed 2018-12-20
   <lpage>-444</lpage>
 </bibl>
 
-<bibl id="B38">
+<bibl id="B39">
   <title><p>Interactive and dynamic graphics for data analysis: with R and
   GGobi</p></title>
   <aug>
@@ -1239,31 +1323,86 @@ Accessed 2018-12-20
     <au><snm>Swayne</snm><fnm>DF</fnm></au>
     <au><snm>Buja</snm><fnm>A</fnm></au>
   </aug>
-  <publisher>Springer Science \& Business Media</publisher>
+  <publisher>New York: Springer Science \& Business Media</publisher>
   <pubdate>2007</pubdate>
 </bibl>
 
-<bibl id="B39">
+<bibl id="B40">
   <title><p>ggplot2: elegant graphics for data analysis</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
   </aug>
-  <publisher>Springer</publisher>
+  <publisher>Switzerland: Springer</publisher>
   <pubdate>2016</pubdate>
 </bibl>
 
-<bibl id="B40">
+<bibl id="B41">
   <title><p>RStudio: integrated development for R</p></title>
   <url>http://www.rstudio.com</url>
 </bibl>
 
-<bibl id="B41">
+<bibl id="B42">
   <title><p>pkgdown: Make static HTML documentation for a package</p></title>
   <aug>
     <au><snm>Wickham</snm><fnm>H</fnm></au>
     <au><snm>Hesselberth</snm><fnm>J</fnm></au>
   </aug>
   <url>https://cran.r-project.org/package=pkgdown</url>
+</bibl>
+
+<bibl id="B43">
+  <title><p>RNA-seq: an assessment of technical reproducibility and comparison
+  with gene expression arrays</p></title>
+  <aug>
+    <au><snm>Marioni</snm><fnm>JC</fnm></au>
+    <au><snm>Mason</snm><fnm>CE</fnm></au>
+    <au><snm>Mane</snm><fnm>SM</fnm></au>
+    <au><snm>Stephens</snm><fnm>M</fnm></au>
+    <au><snm>Gilad</snm><fnm>Y</fnm></au>
+  </aug>
+  <source>Genome research</source>
+  <publisher>Cold Spring Harbor Lab</publisher>
+  <pubdate>2008</pubdate>
+</bibl>
+
+<bibl id="B44">
+  <title><p>NCBI SRA bioproject accession: PRJNA318409</p></title>
+  <aug>
+    <au><snm>Moran Lauter</snm><fnm>AN</fnm></au>
+    <au><snm>Graham</snm><fnm>MA</fnm></au>
+  </aug>
+  <url>https://www.ncbi.nlm.nih.gov/bioproject/PRJNA318409</url>
+</bibl>
+
+<bibl id="B45">
+  <title><p>GC-content normalization for RNA-Seq data</p></title>
+  <aug>
+    <au><snm>Risso</snm><fnm>D</fnm></au>
+    <au><snm>Schwartz</snm><fnm>K</fnm></au>
+    <au><snm>Sherlock</snm><fnm>G</fnm></au>
+    <au><snm>Dudoit</snm><fnm>S</fnm></au>
+  </aug>
+  <source>BMC bioinformatics</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <issue>1</issue>
+  <fpage>480</fpage>
+</bibl>
+
+<bibl id="B46">
+  <title><p>Developmental profiling of gene expression in soybean trifoliate
+  leaves and cotyledons</p></title>
+  <aug>
+    <au><snm>Brown</snm><fnm>AV</fnm></au>
+    <au><snm>Hudson</snm><fnm>KA</fnm></au>
+  </aug>
+  <source>BMC plant biology</source>
+  <publisher>BioMed Central</publisher>
+  <pubdate>2015</pubdate>
+  <volume>15</volume>
+  <issue>1</issue>
+  <fpage>169</fpage>
 </bibl>
 
 </refgrp>

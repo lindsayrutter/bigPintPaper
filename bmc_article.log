@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 JUL 2019 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 JUL 2019 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,14 +324,11 @@ Overfull \hbox (1.0pt too wide) has occurred while \output is active
 [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-[2] [3] [4]
-Underfull \vbox (badness 2197) has occurred while \output is active []
-
- [5]
-[6]
+[2] [3] [4] [5] [6]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 324.
 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -342,68 +339,58 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 57.
 
-[9])
+[9]) [10]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 422.
+(Font)              <8> on input line 425.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 422.
+(Font)              <6> on input line 425.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (20.30946pt too wide) in paragraph at lines 460--460
+Overfull \hbox (20.30946pt too wide) in paragraph at lines 463--463
 [][] 
  []
 
 
-Overfull \hbox (5.74623pt too wide) in paragraph at lines 463--463
+Overfull \hbox (5.74623pt too wide) in paragraph at lines 466--466
 []|[]| 
  []
 
 
-Overfull \hbox (20.30946pt too wide) in paragraph at lines 464--464
+Overfull \hbox (20.30946pt too wide) in paragraph at lines 467--467
 [][] 
  []
 
 
-Overfull \hbox (8.10736pt too wide) in paragraph at lines 465--466
+Overfull \hbox (8.10736pt too wide) in paragraph at lines 468--469
 []|[]| 
  []
 
 
-Overfull \hbox (5.74623pt too wide) in paragraph at lines 467--467
+Overfull \hbox (5.74623pt too wide) in paragraph at lines 470--470
 []|[]| 
  []
 
 
-Overfull \hbox (20.30946pt too wide) in paragraph at lines 468--468
+Overfull \hbox (20.30946pt too wide) in paragraph at lines 471--471
 [][] 
  []
 
 
-Overfull \hbox (8.10736pt too wide) in paragraph at lines 469--470
+Overfull \hbox (8.10736pt too wide) in paragraph at lines 472--473
 []|[]| 
  []
 
 
-Overfull \hbox (5.74623pt too wide) in paragraph at lines 471--471
+Overfull \hbox (5.74623pt too wide) in paragraph at lines 474--474
 []|[]| 
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 471--471
+Underfull \hbox (badness 2269) in paragraph at lines 474--474
 []|\OT1/cmss/m/n/8 User uses Shiny but-tons to spec-ify
  []
 
 
-Overfull \hbox (38.54039pt too wide) in paragraph at lines 457--473
+Overfull \hbox (38.54039pt too wide) in paragraph at lines 460--476
  [] 
  []
 
@@ -411,30 +398,32 @@ Overfull \hbox (38.54039pt too wide) in paragraph at lines 457--473
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (32.7684pt too wide) in paragraph at lines 479--488
+Overfull \hbox (46.65468pt too wide) in paragraph at lines 482--491
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10] [11]
+[11] [12]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 580.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 580
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 583.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 583
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 580.
+LaTeX Font Info:    No file OMScmss.fd. on input line 583.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 580.
+(Font)              for symbol `textbraceleft' on input line 583.
 
-[12
-
-] [13
+[13
 
 ] [14
+
+] [15
+
+] [16
 
 ] 
 AED: lastpage setting LastPage
@@ -448,13 +437,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4120 strings out of 492649
- 58621 string characters out of 6129622
- 171481 words of memory out of 5000000
- 7951 multiletter control sequences out of 15000+600000
+ 4126 strings out of 492649
+ 58685 string characters out of 6129622
+ 161498 words of memory out of 5000000
+ 7957 multiletter control sequences out of 15000+600000
  11642 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,22n,40p,1700b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,22n,40p,1973b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -469,10 +458,10 @@ texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on bmc_article.pdf (14 pages, 216287 bytes).
+Output written on bmc_article.pdf (16 pages, 220250 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 112 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

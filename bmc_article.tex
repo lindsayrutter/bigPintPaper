@@ -258,9 +258,9 @@ We recently developed bigPint, an interactive data visualization software packag
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Basic input}
 
-Each method in bigPint requires an input parameter data object. If a researcher is using the package to visualize RNA-seq data, then this data object should be a count table that contains the read counts for all genes of interest. The value in row \textit{i} and column \textit{j} should indicate how many reads have been assigned to gene \textit{i} in sample \textit{j}. This is the same input format required in popular RNA-seq count-based statistical packages, such as DESeq2, edgeR, limma, EBSeq, and BaySeq \cite{deseq2, edger, limma, ebseq, bayseq}. 
+Each method in bigPint requires an input parameter \textit{data} object. If a researcher is using the package to visualize RNA-seq data, then this \textit{data} object should be a count table that contains the read counts for all genes of interest. The value in row \textit{i} and column \textit{j} should indicate how many reads have been assigned to gene \textit{i} in sample \textit{j}. This is the same input format required in popular RNA-seq count-based statistical packages, such as DESeq2, edgeR, limma, EBSeq, and BaySeq \cite{deseq2, edger, limma, ebseq, bayseq}. 
 
-Several methods in bigPint also require an input parameter dataMetrics object. If a researcher is using the package to visualize RNA-seq data, then this dataMetrics object should be a subset of the data (usually DEGs) where each case includes quantitative values of interest (such as fold change and FDR). This information can be easily derived from popular RNA-seq numerical analysis packages. Again, this framework allows users to work smoothly between visualizations in the bigPint package and models in other Bioconductor packages, complying with the belief that the most efficient way to analyze large datasets is to iterate between models and visualizations.
+Several methods in bigPint also require an input parameter \textit{dataMetrics} object. If a researcher is using the package to visualize RNA-seq data, then this \textit{dataMetrics} object should be a subset of the data (usually DEGs) where each case includes quantitative values of interest (such as fold change and FDR). This information can be easily derived from popular RNA-seq numerical analysis packages. Again, this framework allows users to work smoothly between visualizations in the bigPint package and models in other Bioconductor packages, complying with the belief that the most efficient way to analyze large datasets is to iterate between models and visualizations.
 
 %%%%%%%%%% Original features %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -272,11 +272,11 @@ The Bioconductor community advanced the boundaries of biological visualization i
 
 Our package introduces what we believe is a fairly new interactive visualization technology that is useful in the exploration of large biological datasets. Our technique allows for two independent layers of interactivity, for the foreground and background of the plot respectively. Each layer can include both \textit{geom-drawing} and \textit{geom-manipulating} interactivity. Our new technology can enhance the exploration of large datasets, especially in cases where one layer contains large amounts of data (such as the full dataset) and the other layer contains smaller amounts of data (such as a data subset). Because the layers are independent, users can save time and computation by keeping the layer with more data unaltered while only redrawing the layer with less data.
 
-While the concept of independent layers of interactivity is not new in itself, the technology we introduce is new and solves a difficult problem. We achieved our independent double-layered interactivity using the onRender() method of the htmlwidgets package \cite{htmlwidgets}. This method had the potential for the foreground layer to be overlaid via plotly traces while the plotly background layer did not need to be redrawn, something that could not foreseeably be achieved with the native onRender() method of the plotly package \cite{plotly}. Specifically, the htmlwidgets onRender() method contains three input parameters: an HTML Widget object, a character vector containing JavaScript code, and a list of R objects that can be serialized to JSON format. To develop our technique, we specified a plotly object as the HTML Widget object, which allowed for an interactive background. Within the method, we wrote JavaScript code that enabled interactive foregrounds to be updated without redrawing interactive backgrounds. We used the R object list to transfer count tables and DEG lists into the method. In some our our applications, users can link between the layers of different interactive plots. This functionality was achieved by sending custom messages between the Shiny software and the JavaScript code within the htmlwidgets method \cite{shiny}. We provide pseudocode and documented code for readers who wish to understand the details of how we created our interactive software (see Table~\ref{table:table2}). We will now briefly explain how our two-layered interactivity method can improve upon several of the RNA-seq visualization tools in our package. 
+The idea of multi-layered interactive graphics in R was raised in \cite{xie2014reactive} and a pilot implementation was made using qt software to create different listeners for different layers, an approach that is no longer functional. While the concept of independent layers of interactivity in R is not new in itself, the technology we introduce is new and solves a difficult problem that has been raised before. We achieved our independent double-layered interactivity using the onRender() method of the htmlwidgets package \cite{htmlwidgets}. This method had the potential for the foreground layer to be overlaid via plotly traces while the plotly background layer did not need to be redrawn, something that could not foreseeably be achieved with the native onRender() method of the plotly package \cite{plotly}. Specifically, the htmlwidgets onRender() method contains three input parameters: an HTML Widget object, a character vector containing JavaScript code, and a list of R objects that can be serialized to JSON format. To develop our technique, we specified a plotly object as the HTML Widget object, which allowed for an interactive background. Within the method, we wrote JavaScript code that enabled interactive foregrounds to be updated without redrawing interactive backgrounds. We used the R object list to transfer count tables and DEG lists into the method. In some our our applications, users can link between the layers of different interactive plots. This functionality was achieved by sending custom messages between the Shiny software and the JavaScript code within the htmlwidgets method \cite{shiny}. We provide pseudocode and documented code for readers who wish to understand the details of how we created our interactive software (see Table~\ref{table:table2}). We will now briefly explain how our two-layered interactivity method can improve upon several of the RNA-seq visualization tools in our package. 
 
 \subsubsection*{1a. Scatterplot matrices}
 
-Scatterplot matrices have appeared in statistical graphics literature for almost four decades and used across various fields of multivariate research \cite{becker1984brushing, carr1984graphical, tufte2001visual, tukey1981graphical}. Previous user studies have shown that participants performed better when using animated rather than static versions of scatterplot matrices. Users also preferred animated scatterplot matrices and found them easier to understand as they can alleviate overplotting issues \cite{chen2018using}. Rendering scatterplot matrices interactive is promising but challenging with large datasets \cite{carr1987scatterplot}. The number of background geoms that need to be drawn grows exponentially by dimension size: $n$-dimensional data corresponds to $n^2$ scatterplots. Our two-layered interactive visualization technology improves upon this dilemma by allowing details of interest to be superimposed in the foreground while the massive number of geoms in the background does not require redrawing. See Tables~\ref{table:table1} and~\ref{table:table2} for details (video, pseudocode, code, and application link) about our interactive scatterplot matrices.
+Scatterplot matrices have appeared in statistical graphics literature for almost four decades and used across various fields of multivariate research \cite{becker1984brushing, carr1984graphical, tufte2001visual, tukey1981graphical}. Previous user studies have shown that participants performed better when using animated rather than static versions of scatterplot matrices. Users also preferred animated scatterplot matrices and found them easier to understand as they can alleviate overplotting issues \cite{chen2018using}. Rendering scatterplot matrices interactive is promising but challenging with large datasets \cite{carr1987scatterplot}. The number of background geoms that need to be drawn grows exponentially by dimension size: $n$-dimensional data corresponds to $n^2$ scatterplots. Our two-layered interactive visualization technology improves upon this dilemma by allowing details of interest to be superimposed in the foreground while the massive number of geoms in the background does not require redrawing. See Tables~\ref{table:table1} and~\ref{table:table2} for details (video, pseudocode, code, and application link) regarding our interactive scatterplot matrices.
 
 \subsubsection*{1b. Litre plots}
 
@@ -284,17 +284,17 @@ Problems still remain when scatterplot matrices are applied to large datasets. P
 
 Even though these alternative techniques are useful, they may not simultaneously display distributions across all cases (genes) and variables (samples). We generally want to compare replicate and treatment variability in RNA-seq data, which can be visually accomplished by plotting all genes and samples. We also want to superimpose DEGs to determine how their read count variability compares to that of the whole dataset. In light of this, we developed a plot that collapses the scatterplot matrix onto one Cartesian coordinate system, allowing users to visualize all read counts from one DEG of interest onto all read counts of all genes in the dataset. We call this new plot a repLIcate TREatment (``litre'') plot. An in depth explanation about the litre plot can be found in our previous methods paper \cite{rutter1}.
 
-We believe our two-layered interactive visualization method is an indispensable component of the litre plot. Drawing the background (all genes in the dataset) is the time-limiting step, whereas drawing the foreground (one DEG of interest) is immediate. Most users would like to superimpose DEGs from a list one by one onto the background. This process would be unnecessarily time-prohibiting if the background needed to be redrawn each time the user progressed to the next DEG. Fortunately, our technology allows the user to immediately redraw the interactive foreground (the DEG of interest) while the background (all genes in the data) remains unchanged but preserved in its interactive capabilities. See Tables~\ref{table:table1} and~\ref{table:table2} for details (video, pseudocode, code, and application link) about our interactive litre plots.
+We believe our two-layered interactive visualization method is an indispensable component of the litre plot. Drawing the background (all genes in the dataset) is the time-limiting step, whereas drawing the foreground (one DEG of interest) is immediate. Most users would like to superimpose DEGs from a list one by one onto the background. This process would be unnecessarily time-prohibiting if the background needed to be redrawn each time the user progressed to the next DEG. Fortunately, our technology allows the user to immediately redraw the interactive foreground (the DEG of interest) while the background (all genes in the data) remains unchanged but preserved in its interactive capabilities. See Tables~\ref{table:table1} and~\ref{table:table2} for details (video, pseudocode, code, and application link) regarding our interactive litre plots.
 
 \subsubsection*{1c. Volcano plots}
 
-Volcano plots draw significance and fold change on the vertical and horizontal axes respectively. In RNA-seq studies, volcano plots allow users to check that genes were not falsely deemed significant due to outliers, low expression levels, and batch effects \cite{li2011application}. Researchers benefit from the ability to quickly identify individual gene names in the volcano plot. This was previously achieved with the identify() method in R, which identifies the closest point in a scatterplot to the position nearest the mouse click \cite{li2011application}. The interactive volcano plot in bigPint can identify individual gene names in a less ambiguous fashion by responding to users hovering \textit{directly} over corresponding points. It also improves upon traditional volcano plots by allowing users to threshold on statistical values in order to immediately update the superimposed gene subset without having to redraw the more computationally-heavy background that contains all genes. See Tables~\ref{table:table1} and~\ref{table:table2} for details (video, pseudocode, code, and application link) about our interactive volcano plots.
+Volcano plots draw significance and fold change on the vertical and horizontal axes respectively. In RNA-seq studies, volcano plots allow users to check that genes were not falsely deemed significant due to outliers, low expression levels, and batch effects \cite{li2011application}. Researchers benefit from the ability to quickly identify individual gene names in the volcano plot. This was previously achieved with the identify() method in R, which identifies the closest point in a scatterplot to the position nearest the mouse click \cite{li2011application}. The interactive volcano plot in bigPint can identify individual gene names in a less ambiguous fashion by responding to users hovering \textit{directly} over corresponding points. It also improves upon traditional volcano plots by allowing users to threshold on statistical values in order to immediately update the superimposed gene subset without having to redraw the more computationally-heavy background that contains all genes. See Tables~\ref{table:table1} and~\ref{table:table2} for details (video, pseudocode, code, and application link) regarding our interactive volcano plots.
 
 \subsubsection*{2. Consecutive box selection}
 
 The bigPint package provides interactive tools for consecutive box selection. A box selection is a rectangular query drawn directly on a two-dimensional graph. Users can specify a box selection by clicking on the desired starting point of the rectangular query and dragging the mouse pointer to the desired opposite corner point of the rectangular query. This procedure for generating rectangles is widely used in interactive programs and should be familiar to most users \cite{hochheiser2003dynamic}. After the user releases the mouse, the query is processed and only the data cases that were inside the specified rectangle remain. More precisely, a data case remains in a box selection queried between ($x_1$, $y_1$) and ($x_2$, $y_2$) if every point within $x_1 \leq x \leq x_2$ is also within $y_1 \leq y \leq y_2$ (where $y_2 \geq y_1$ and $x_2 \geq x_1$). The user can specify consecutive queries with multiple box selections. The consecutive box selection model is convenient in cases where identical thresholds are desired over adjacent features. In these cases, a single box selection of width $w$ can be used to simultaneously query the same threshold across $w$ features. This process is an improvement over single-feature box selection widgets, where $w$ individual queries would be required \cite{hochheiser2003dynamic}. 
 
-Consecutive box selection may have originally been designed for time series data, but has since proven useful for detecting patterns in gene expression data. Combined with parallel coordinate plots, the consecutive box selection technique has been used to elicit candidate regulatory splice sequences showing high values at some positions and low values at other positions \cite{hochheiser2003dynamic}. In RNA-seq, this technology can also be used to investigate differential expression showing high read counts for one treatment group and low read counts for another treatment group, requiring a consecutive query. Consecutive box selection tools have been published for gene expression analysis sofware that was restricted for certain operating systems \cite{hochheiser2003dynamic}. We believe that publishing consecutive box selection tools in a platform like R can be useful for computational biologists using various operating systems. See Tables~\ref{table:table2} for details (video, pseudocode, code, and application link) about our interactive parallel coordinate plots that feature consecutive box selection.
+Consecutive box selection may have originally been designed for time series data, but has since proven useful for detecting patterns in gene expression data. Combined with parallel coordinate plots, the consecutive box selection technique has been used to elicit candidate regulatory splice sequences showing high values at some positions and low values at other positions \cite{hochheiser2003dynamic}. In RNA-seq, this technology can also be used to investigate differential expression showing high read counts for one treatment group and low read counts for another treatment group, requiring a consecutive query. Consecutive box selection tools have been published for gene expression analysis sofware that was restricted for certain operating systems \cite{hochheiser2003dynamic}. We believe that publishing consecutive box selection tools in a platform like R can be useful for computational biologists using various operating systems. See Tables~\ref{table:table2} for details (video, pseudocode, code, and application link) regarding our interactive parallel coordinate plots that feature consecutive box selection.
 
 %%%%%%%%%%% Useful features %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -306,7 +306,7 @@ Static plots can be saved as list objects in the R workspace and/or as JPG files
 
 \subsubsection*{Second feature layer}
 
-Both static and interactive plots allow for a subset of data to be plotted in a different manner than the full dataset. When analyzing RNA-seq data, this second feature layer could represent DEGs. There are three options for creating data subsets with static plots. First, users can threshold the previously-mentioned dataMetrics object by one of its quantitative variables. Second, users can simply declare a geneList object that contains the list of data subset IDs. Third, the user can simply leave the dataMetrics and geneList objects to their default value of NULL and not overlay any data subsets.
+Both static and interactive plots allow for a subset of data to be plotted in a different manner than the full dataset. When analyzing RNA-seq data, this second feature layer could represent DEGs. There are three options for creating data subsets with static plots. First, users can threshold the previously-mentioned \textit{dataMetrics} object by one of its quantitative variables. Second, users can simply declare a geneList object that contains the list of data subset IDs. Third, the user can simply leave the \textit{dataMetrics} and geneList objects to their default value of NULL and not overlay any data subsets.
 
 \subsubsection*{Group comparison filters}
 
@@ -365,14 +365,17 @@ bigPint was released under the GPL-3 license. Most bigPint visualization methods
 
 \begin{backmatter}
 
+\section*{Availability of data and materials}
+  The bigPint package is available on Bioconductor at https://bioconductor.org/packages/devel/bioc/html/bigPint.html. The software website that contains thorough and reproducible vignettes is available at https://lindsayrutter.github.io/bigPint. The four public datasets used as examples in the bigPint package are available online: Three are deposited on the NCBI Sequence Read Archive with accession numbers SRA000299 \cite{Marioni}, PRJNA318409 \cite{Lauter16}, and SRA048710 \cite{Risso}. One is deposited on the NCBI Gene Expression Omnibus with accession number GSE61857 \cite{Brown}.
+
 \section*{Competing interests}
   The authors declare that they have no competing interests.
 
 \section*{Author's contributions}
-  The software was implemented by and the paper was written by the first author primarily, based on initial ideas, consequent advice, and small contributions from the second author. 
+  The software was implemented and the paper was written primarily by the first author, based on initial ideas, consequent advice, and small contributions from the second author. 
 
 \section*{Acknowledgements}
-  We would like to thank Roxane Legaie from Monash University and Dr. Amy L. Toth from Iowa State University for their helpful feedback. We also thank the open-source community for their numerous outlets of support in regards to R, plotly, htmlwidgets, ggplot2, and Shiny, without which this project would not have been possible.
+  We would like to thank Roxane Legaie from Monash University and Dr. Amy L. Toth from Iowa State University for their helpful feedback. We also thank the open-source community for their numerous outlets of support in regards to R, plotly, htmlwidgets, ggplot2, and shiny, without which this project would not have been possible.
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
@@ -478,11 +481,11 @@ A) User selects the Box Select tool from the Plotly Modebar. B) User specifies b
 \caption{Helpful resources about interactive graphics in bigPint}
       \begin{tabular}{llllll}
         \hline
-        Plot & Figure & Explanation video & Interactive application & Pseudocode & Code\\ \hline
-        Scatterplot matrix & Figure~\ref{figureSM} & Link a1 & bit.ly/smplotApp & Algorithm~\ref{algorithmSM} & Link a3\\
-        Litre plot & Figure~\ref{figureLitre} & Link b1 & bit.ly/litreApp & Algorithm~\ref{algorithmLitre} & Link b3\\
-        Volcano plot & Figure~\ref{figureVolcano} & Link c1 & bit.ly/volcanoApp & Algorithm~\ref{algorithmVolcano} & Link c3\\
-        Parallel coordinate plot & Figure~\ref{figurePCP} & Link d1 & bit.ly/pcplotApp & Figure d2 & Link d3\\ \hline
+        Plot & Figure & Video & Application & Pseudocode & Code\\ \hline
+        Scatterplot matrix & Figure~\ref{figureSM} & bit.ly/smplotVid & bit.ly/smplotApp & Algorithm~\ref{algorithmSM} & bit.ly/smplotCode\\
+        Litre plot & Figure~\ref{figureLitre} & bit.ly/litreVid & bit.ly/litreApp & Algorithm~\ref{algorithmLitre} & bit.ly/litreCode\\
+        Volcano plot & Figure~\ref{figureVolcano} & bit.ly/volcVid & bit.ly/volcApp & Algorithm~\ref{algorithmVolcano} & bit.ly/volcCode\\
+        Parallel coordinate plot & Figure~\ref{figurePCP} & bit.ly/pcplotVid & bit.ly/pcplotApp & Algorithm~\ref{algorithmPCP} & bit.ly/pcplotCode\\ \hline
       \end{tabular}
       \label{table:table2}
 \end{table}
@@ -792,8 +795,98 @@ observe(\{session\$sendCustomMessage(type = ``lines'', message=list(geneID=geneI
 
 
 
+
+
+
+
 \clearpage
 
+\DontPrintSemicolon
+\begin{algorithm}[H]
+\SetInd{0.2em}{1.3em}
+
+\KwData{Data frame input by user}
+\KwResult{Interactive parallel coordinate plot}
+
+/* \textit{Declare Shiny server}\;
+\SetKwBlock{Fna}{\textnormal{server $\leftarrow$ function(input, output, session)\{ }}{}
+\Fna{
+
+\BlankLine
+/* \textit{Create an empty ggplotly object with same dimensions as data}\;
+p $\leftarrow$ ggplot(); gp $\leftarrow$ ggplotly(p)
+
+\BlankLine
+/* \textit{Send user-defined line color into onRender() function}\;
+session\$sendCustomMessage(type = ``lines'', message = list(lineColor = lineColor))
+
+\BlankLine
+/* \textit{Declare Shiny output parallel coordinate plot}\;
+\SetKwBlock{Fnb}{\textnormal{output\$pcpPlot $\leftarrow$ renderPlotly(\{ }}{}
+\Fnb{
+
+\BlankLine
+/* \textit{Tailor interactivity of plotly parallel coordinate plot using custom JavaScript}\;
+\SetKwBlock{Fnc}{\textnormal{gp \%$>$\% onRender(``function(el, x, data)\{ }}{}
+\Fnc{
+
+\BlankLine
+/* \textit{Define rects array object to hold IDs of remaining lines}\;
+var rects = []
+
+\BlankLine
+/* \textit{Draw lines for the original dataset}\;
+var pcpLine = \{x: xArr, y: yArr, mode: `lines', color: data.lineColor\}\;
+Traces.push(pcpLine)\;
+Plotly.addTraces(el.id, Traces)\;
+
+
+\BlankLine
+/* \textit{If the user draws a rectangle}\;
+\SetKwBlock{Fnd}{\textnormal{el.on(`plotly\_selected', function(e)\{ }}{}
+\Fnd{
+
+\BlankLine
+/* \textit{Delete lines outside the user-defined rectangle}\;
+Traces.push(delLine)\;
+Plotly.addTraces(el.id, Traces)\;
+
+\BlankLine
+/* \textit{Create new object called pcpDat that only contains genes within rectangle}\;
+
+\BlankLine
+/* \textit{Push IDs of remaining lines to rects array object}\;
+for (a=0; a$<$pcpDat.length; a++)\{rects.push(pcpDat[a][`ID'])\}
+
+
+\BlankLine
+/* \textit{Save remaining gene IDs in an object called rects with handle called `rects' so it can be read outside current JavaScript function back in Shiny}\;
+Shiny.onInputChange(`rects', rects)\;
+
+
+}\})\;
+}\})\;
+\BlankLine
+/* \textit{Pass R objects into the JavaScript function}\;
+'', data = list(pcpDat = pcpDat, lineColor = lineColor)\;
+}\})\;
+
+\BlankLine
+/* \textit{Read into Shiny the gene IDs that remain within rectangle drawn by user}\;
+inputRectDf $\leftarrow$ reactive({input\$rects})
+
+\BlankLine
+/* \textit{Print the selected gene IDs in interactive data table}\;
+output\$rectdf = renderDataTable(pcpDat \%$>$\% filter(ID \%in\% inputRectDf()))
+
+
+}\}\;
+\caption{Pseudocode for interactive parallel coordinate plot}
+\label{algorithmPCP}
+\end{algorithm}
+
+
+\clearpage
 
 
 
